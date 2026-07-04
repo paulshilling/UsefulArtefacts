@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<!-- saved from url=(0253)https://2d7a5e90-7dc3-4bf1-b871-093c4d5108f2.frame.claudeusercontent.com/_f/1782816954-3699/?__frame_t=8kxzcGUsTA7bCG4IC3fn-0Sd.8a3eb336-7f5c-46b7-931c-e0d53bc1c385.7417a124-c564-458c-bfa7-8e89ecd0affb.1783163824&__frame_v=manifest.bda96bdb5ebc99bf.json -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><!--<base href="/_f/1782816954-3699/">--><base href="."><script>window.__FRAME_PREAMBLE={"capabilities":{"mcp":"mcp.BQqQVVN_.js"},"transforms":"_transforms.DYk1Ltlh.js"}</script><script>(function(){"use strict";const J="modulepreload",K=function(e){return"/"+e},V={},N=function(t,n,u){let o=Promise.resolve();function i(f){const a=new Event("vite:preloadError",{cancelable:!0});if(a.payload=f,window.dispatchEvent(a),!a.defaultPrevented)throw f}return o.then(f=>{for(const a of f||[])a.status==="rejected"&&i(a.reason);return t().catch(i)})},$=["light","dark","system"];function q(e){if(e==null||typeof e!="object")return!1;const t=e.__frame_init;return t!=null&&typeof t=="object"}function I(e){if(e==null||typeof e!="object")return!1;const t=e.__frame_theme;if(t==null||typeof t!="object")return!1;const n=t.theme;return typeof n=="string"&&$.includes(n)}function S(e){if(window===top||e.type==="auxclick"&&e.button!==1)return;const t=e.composedPath?e.composedPath():[e.target];let n=null;for(let f=0;f<t.length;f++){const a=t[f];if(a&&a.matches&&a.matches("a[href],area[href]")){n=a;break}}if(!n&&e.target&&e.target.closest&&(n=e.target.closest("a[href],area[href]")),!n)return;const u=n.getAttribute("href");if(!u)return;let o,i;try{o=new URL(u,document.baseURI),i=new URL(document.baseURI).origin}catch{return}(o.protocol==="http:"||o.protocol==="https:")&&o.origin!==i&&(e.preventDefault(),parent.postMessage({__frame_nav:!0,url:o.href},"*"))}const L={};function v(e){if(window===top)return;const t=Date.now();t-(L[e]||0)<500||(L[e]=t,parent.postMessage({__frame_engaged:!0,kind:e},"*"))}function U(){addEventListener("click",S,!0),addEventListener("auxclick",S,!0)}function D(){addEventListener("scroll",()=>v("scroll"),{capture:!0,passive:!0}),addEventListener("pointermove",()=>v("pointer"),{capture:!0,passive:!0}),addEventListener("click",()=>v("click"),{capture:!0,passive:!0})}function F(e,t,n){const u=[...t.values()].filter(o=>o.targets.some(i=>i.startsWith(e+".")));return{wrap(o,i){const f=`${e}.${o}`,a=u.filter(s=>s.targets.includes(f));return a.length===0?(...s)=>{try{return i(...s)}catch(d){return Promise.reject(d)}}:(...s)=>{let d=s;for(const c of a){const l=c.module.parameters;if(l)try{d=l(d)}catch{return Promise.reject({code:"transform_error",id:c.id,scope:e,message:"parameters transform failed"})}}let m;try{m=i(...d)}catch(c){m=Promise.reject(c)}return m.then(c=>{for(let l=a.length-1;l>=0;l--){const g=a[l],p=g.module.returns;if(p)try{c=p(c)}catch{return n({id:g.id,scope:e,leg:"returns"}),c}}return c},c=>{for(let l=a.length-1;l>=0;l--){const g=a[l],p=g.module.throws;if(p)try{c=p(c)}catch{return n({id:g.id,scope:e,leg:"throws"}),Promise.reject(c)}}return Promise.reject(c)})}}}}function B(e,t,n,u=()=>{}){const o=new Set(e.changes??[]),i=new Map;for(const f of o){const a=t[f];a&&i.set(f,a)}return{contract:e.contract,changes:o,flags:new Set(e.flags??[]),capabilities:e.capabilities??{},transforms:i,shellOrigin:n.shellOrigin,mount:n.mount,pipe:f=>F(f,i,u)}}(function(){const e=Object.defineProperty,t=globalThis,n=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let u=0;for(let o=0;o<n.length;o++){const i=n[o];try{e(t,i,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[i]}catch{}try{e(t,i,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[i]=="function"&&u++}if(u&&window!==top)try{parent.postMessage({__frame_rtc_lockdown_failed:u},"*")}catch{}})();const z=1e4,x=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function W(e){for(const t of x)if(t.endsWith(":*"))try{const n=new URL(e);if(`${n.protocol}//${n.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}const b=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities??{}}),E=window.__FRAME_PREAMBLE?.transforms,k=/^[\w.-]+\.js$/,H=/^[a-z][a-z0-9_-]{0,63}$/;let C=null,h=null;function P(e,t,n){try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!0,enumerable:!0})}catch{}}}let R=!1;function A(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,R=!0):R&&(delete t.dataset.theme,t.style.colorScheme="",R=!1)}const _=new Map;function G(e,t){const n=_.get(e);if(!n)return;Object.assign(n.impl,t),n.impl.__settled=()=>Promise.reject({code:"capability_removed",message:`${e}: method not in this runtime`});const u=n.queue;n.queue=[];for(const o of u){const i=t[o.method];i?i(...o.args).then(o.resolve,o.reject):o.reject({code:"capability_removed",message:`${e}.${o.method} is not in this runtime`})}}function j(e,t){const n=_.get(e);if(!n)return;n.impl.__settled=()=>Promise.reject(t);const u=n.queue;n.queue=[];for(const o of u)o.reject(t)}const O=Object.getOwnPropertyDescriptor(window,"claude");if(window!==top&&!(O&&O.writable===!1)){U(),D();const e=O?.value??{};P(window,"claude",e);const t=s=>{const d={impl:Object.create(null),queue:[]};_.set(s,d);const m=new Proxy(d.impl,{get:(c,l)=>{if(typeof l=="string"&&!(l==="then"||l==="toJSON"||l==="valueOf"))return l==="toString"?Object.prototype.toString:(...g)=>{const p=c[l]??c.__settled;return p?p(...g):new Promise((w,M)=>{d.queue.push({method:l,args:g,resolve:w,reject:M})})}},set:()=>!1});P(e,s,m)};for(const s of Object.keys(b)){if(e[s]!==void 0){P(e,s,e[s]);continue}t(s)}let n=null,u=null,o=0;const i=s=>{s.source!==parent||!W(s.origin)||q(s.data)&&(n=s.data.__frame_init,h=s.origin,removeEventListener("message",i),clearTimeout(o),u?.())};addEventListener("message",i),parent.postMessage({__frame_connect:!0},"*");const f=new Promise(s=>{u=s,o=setTimeout(()=>{removeEventListener("message",i),s()},z)}),a=document.readyState==="loading"?new Promise(s=>document.addEventListener("DOMContentLoaded",()=>s(),{once:!0})):Promise.resolve();f.then(async()=>{if(!n||!h){for(const r of _.keys())j(r,{code:"not_granted",message:"frame initialization did not arrive - capability unavailable"});return}A(n.theme);const s=h;addEventListener("message",r=>{r.source!==parent||r.origin!==s||I(r.data)&&A(r.data.__frame_theme.theme)});const d=r=>N(()=>import("/_runtime/"+r),void 0),m=Object.keys(n.capabilities??{});for(const r of m)Object.hasOwn(b,r)||H.test(r)&&e[r]===void 0&&(t(r),j(r,{code:"capability_disabled",message:"capability not in this runtime generation"}));const c=m.filter(r=>Object.hasOwn(b,r)).map(r=>[r,b[r]]).filter(r=>typeof r[1]=="string"&&k.test(r[1])),[l,...g]=await Promise.allSettled([E&&k.test(E)?d(E):Promise.resolve({}),...c.map(([,r])=>d(r))]),p=h;C=B(n,l.status==="fulfilled"&&l.value?.TRANSFORMS||{},{shellOrigin:p,mount:G},r=>parent.postMessage({__frame_cap_telemetry:r},p));const w=r=>parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:r}},p),M=C;g.forEach((r,y)=>{const T=c[y][0];if(r.status!=="fulfilled"){w(T);return}try{r.value?.install?.(M)}catch{w(T)}});for(const[r,y]of _)y.queue.length===0&&Object.keys(y.impl).length>0||j(r,{code:m.includes(r)?"capability_disabled":"not_granted",message:"capability not available in this session"});await a,parent.postMessage({__frame_ready:!0},h)})}})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>From Chaos to Clarity: The Case for a Data Platform</title>
+<style>
+:root {
+  --ink: #0F172A;
+  --ground: #F1F2F6;
+  --accent: #4338CA;
+  --accent-light: #EEF2FF;
+  --chaos: #DC2626;
+  --order: #059669;
+  --surface: #FFFFFF;
+  --muted: #64748B;
+  --dark-bg: #0F172A;
+  --dark-surface: #1E293B;
+  --ff-display: Georgia, 'Times New Roman', serif;
+  --ff-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ff-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--ff-body);
+  background: var(--ground);
+  color: var(--ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: var(--ff-display);
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  text-wrap: balance;
+}
+h2 {
+  font-family: var(--ff-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  text-wrap: balance;
+}
+h3 {
+  font-family: var(--ff-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+p { line-height: 1.7; max-width: 65ch; }
+
+.eyebrow {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3.5rem);
+}
+.reading-col { max-width: 720px; }
+section { padding: clamp(4rem, 8vw, 7rem) 0; }
+
+/* HERO */
+.hero {
+  background: var(--dark-bg);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0 5rem;
+}
+#heroCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  pointer-events: none;
+}
+.hero-content { position: relative; z-index: 2; }
+.hero .eyebrow { color: #818CF8; margin-bottom: 1.25rem; display: block; }
+.hero h1 { color: white; margin-bottom: 1.25rem; }
+.hero h1 em { font-style: italic; color: #C7D2FE; }
+.hero-lead {
+  font-size: clamp(1rem, 1.4vw, 1.125rem);
+  color: #94A3B8;
+  max-width: 56ch;
+  line-height: 1.75;
+  margin-bottom: 3rem;
+}
+.hero-meta { display: flex; gap: 2.5rem; flex-wrap: wrap; }
+.hero-meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+.hero-meta-item .label { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #334155; }
+.hero-meta-item .value { font-size: 0.8125rem; color: #94A3B8; }
+
+.scroll-hint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  animation: nudge 2.2s ease-in-out infinite;
+}
+.scroll-hint span {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #334155;
+}
+.scroll-hint::after {
+  content: '';
+  width: 1px;
+  height: 2.5rem;
+  background: linear-gradient(to bottom, #334155, transparent);
+}
+@keyframes nudge {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* PROBLEM */
+.section-problem { background: var(--surface); }
+
+.canvas-wrap {
+  margin: 3rem 0 0.75rem;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #E2E8F0;
+  background: #0A0F1A;
+}
+.canvas-wrap canvas { display: block; width: 100%; }
+.canvas-caption {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+/* COST */
+.section-cost { background: var(--dark-bg); }
+.section-cost h2, .section-cost .eyebrow { color: white; }
+.section-cost > .container > p { color: #94A3B8; margin-top: 1rem; }
+.section-cost .eyebrow { color: #818CF8; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+.stat-card {
+  background: var(--dark-surface);
+  border-radius: 10px;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.04);
+  position: relative;
+  overflow: hidden;
+}
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent);
+}
+.stat-number {
+  font-family: var(--ff-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: white;
+  line-height: 1;
+  margin-bottom: 0.6rem;
+  font-variant-numeric: tabular-nums;
+}
+.stat-number .prefix, .stat-number .suffix {
+  font-size: 1.3rem;
+  color: #818CF8;
+}
+.stat-label { font-size: 0.85rem; color: #94A3B8; line-height: 1.55; margin-bottom: 0.75rem; }
+.stat-source { font-size: 0.65rem; color: #334155; letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* FLOW */
+.section-flow { background: #F8F9FC; }
+
+/* PILLARS */
+.section-pillars { background: var(--ground); }
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+.pillar-card {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 2rem 1.75rem;
+  border: 1px solid #E2E8F0;
+  transition: box-shadow 0.2s ease;
+}
+.pillar-card:hover { box-shadow: 0 8px 28px rgba(67,56,202,0.10); }
+.pillar-icon {
+  width: 44px; height: 44px;
+  background: var(--accent-light);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.25rem;
+}
+.pillar-icon svg {
+  width: 22px; height: 22px;
+  stroke: var(--accent);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.pillar-card h3 { margin-bottom: 0.6rem; }
+.pillar-card p { font-size: 0.9rem; color: var(--muted); max-width: none; }
+
+/* CASE STUDIES */
+.section-cases { background: var(--dark-bg); }
+.section-cases h2 { color: white; }
+.section-cases .eyebrow { color: #818CF8; }
+.section-cases > .container > .reading-col > p { color: #94A3B8; margin-top: 1rem; }
+
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+.case-card {
+  background: var(--dark-surface);
+  border-radius: 10px;
+  padding: 1.75rem;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+.case-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.case-tag.warn { color: #F87171; }
+.case-tag.good { color: #34D399; }
+.case-card h3 { color: white; font-size: 1rem; margin-bottom: 0.6rem; line-height: 1.4; }
+.case-card p { font-size: 0.85rem; color: #94A3B8; line-height: 1.65; max-width: none; }
+.case-impact {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  font-size: 0.8rem;
+  color: #475569;
+  line-height: 1.55;
+}
+.case-impact strong { color: #CBD5E1; font-weight: 500; }
+
+/* COMPARE */
+.section-compare { background: var(--surface); }
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 3rem;
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+}
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  min-width: 560px;
+}
+.compare-table th {
+  padding: 0.875rem 1.25rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+}
+.compare-table th:first-child { background: #F8FAFC; color: var(--muted); width: 28%; }
+.compare-table th.col-b { background: #FEF2F2; color: #991B1B; }
+.compare-table th.col-a { background: #F0FDF4; color: #166534; }
+.compare-table td {
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid #F1F5F9;
+  vertical-align: top;
+  line-height: 1.55;
+}
+.compare-table td:first-child { font-weight: 500; background: #FAFAFA; color: var(--ink); }
+.compare-table td.b { color: #7F1D1D; background: #FFFAFA; }
+.compare-table td.a { color: #14532D; background: #F0FFF4; }
+
+/* CTA */
+.section-cta { background: var(--accent); color: white; text-align: center; }
+.section-cta h2 { color: white; margin-bottom: 1rem; }
+.section-cta > .container > p { color: rgba(255,255,255,0.75); max-width: 58ch; margin: 0 auto 3rem; font-size: 1rem; }
+.section-cta .eyebrow { color: rgba(255,255,255,0.5); margin-bottom: 1rem; display: block; }
+.cta-steps { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+.cta-step {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: left;
+  max-width: 230px;
+}
+.cta-step-num {
+  font-family: var(--ff-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.25);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+.cta-step h3 { color: white; font-size: 0.9rem; margin-bottom: 0.35rem; }
+.cta-step p { font-size: 0.8rem; color: rgba(255,255,255,0.6); max-width: none; margin: 0; }
+
+footer {
+  background: #080C14;
+  color: #334155;
+  padding: 1.75rem 0;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.reveal.in { opacity: 1; transform: none; }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .scroll-hint { animation: none; }
+}
+@media (max-width: 640px) {
+  .hero-meta { gap: 1.5rem; }
+}
+</style>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="heroCanvas" width="1359" height="686"></canvas>
+  <div class="container hero-content">
+    <div class="reading-col">
+      <span class="eyebrow">Solutions Architecture Brief · Data Strategy</span>
+      <h1>Your data is <em>working against you</em></h1>
+      <p class="hero-lead">Every spreadsheet named "FINAL_v2_USE_THIS", every number that can't be traced to its source, every analyst morning spent reconciling conflicting files — this is the compounding cost of operating without a governed data platform. This document makes the case for change.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="label">Document type</span>
+          <span class="value">Executive Strategic Brief</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Focus area</span>
+          <span class="value">Data Governance &amp; Platform</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Audience</span>
+          <span class="value">Business &amp; Technology Leadership</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span></div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section-problem">
+  <div class="container">
+    <div class="reading-col reveal">
+      <p class="eyebrow">The Reality</p>
+      <h2>What "managed in spreadsheets" actually looks like</h2>
+      <p style="margin-top:1rem;color:var(--muted)">Every organisation starts here. A sheet for sales. Another for inventory. A Drive folder that became the default filing cabinet. Over time, files fork, versions multiply, and the data driving decisions becomes uncertain. The simulation below visualises that environment at the data layer.</p>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="chaosCanvas" height="370" width="989" style="height: 370px;"></canvas>
+    </div>
+    <p class="canvas-caption">Live simulation · Each node is a spreadsheet or file. Lines show data dependencies. Red indicators mark version conflicts and broken links.</p>
+  </div>
+</section>
+
+<!-- COST -->
+<section class="section-cost">
+  <div class="container">
+    <div class="reading-col reveal">
+      <p class="eyebrow">The Evidence</p>
+      <h2>Quantifying the invisible tax</h2>
+      <p>These figures come from independent research across thousands of organisations. The cost of poor data governance rarely arrives as a single event — it accumulates in every hour spent reconciling figures, every decision made on stale data, every compliance breach that could have been prevented.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="stat-number"><span class="prefix">$</span><span class="counter" data-target="12.9" data-float="1">0</span><span class="suffix">M</span></div>
+        <p class="stat-label">Average annual cost of poor data quality per organisation</p>
+        <p class="stat-source">Gartner, 2022</p>
+      </div>
+      <div class="stat-card reveal reveal-d1">
+        <div class="stat-number"><span class="counter" data-target="80">0</span><span class="suffix">%</span></div>
+        <p class="stat-label">Of an analyst's time spent finding, cleaning, and reconciling data — not analysing it</p>
+        <p class="stat-source">Harvard Business Review / TDWI</p>
+      </div>
+      <div class="stat-card reveal reveal-d2">
+        <div class="stat-number"><span class="counter" data-target="15841" data-comma="1">0</span></div>
+        <p class="stat-label">COVID-19 test results silently lost when NHS England's Excel file hit its row limit</p>
+        <p class="stat-source">Public Health England, Sept 2020</p>
+      </div>
+      <div class="stat-card reveal" style="transition-delay:0.3s">
+        <div class="stat-number"><span class="counter" data-target="58">0</span><span class="suffix">%</span></div>
+        <p class="stat-label">More likely to beat revenue goals — organisations with mature data governance vs. those without</p>
+        <p class="stat-source">Forrester Research</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="section-flow">
+  <div class="container">
+    <div class="reading-col reveal">
+      <p class="eyebrow">The Solution</p>
+      <h2>How governed data flows</h2>
+      <p style="margin-top:1rem;color:var(--muted)">A data platform does not replace your sources — it governs how data moves between them. Every record is validated, catalogued, and tracked. Every consumer — a dashboard, a report, a model — receives a guaranteed, traceable version of the truth. Failed validations are quarantined, not silently passed downstream.</p>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="flowCanvas" height="430" width="989" style="height: 430px;"></canvas>
+    </div>
+    <p class="canvas-caption">Live simulation · Data flows from sources (left) through the governance layer (centre) to consumers (right). Red particles fail validation and are rejected before reaching consumers.</p>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="section-pillars">
+  <div class="container">
+    <div class="reading-col reveal">
+      <p class="eyebrow">Framework</p>
+      <h2>The three pillars of data governance</h2>
+      <p style="margin-top:1rem;color:var(--muted)">Governance is not a product — it is a capability. Without all three pillars operating together, data quality cannot be assured, compliance cannot be demonstrated, and trust in your numbers cannot be established.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card reveal">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        </div>
+        <h3>Data Quality &amp; Validation</h3>
+        <p>Every record is tested against defined rules before it enters the platform. Type checks, range checks, referential integrity, and business logic all run automatically. Bad data is quarantined, not silently propagated to every downstream report.</p>
+      </div>
+      <div class="pillar-card reveal reveal-d1">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+        </div>
+        <h3>Data Lineage &amp; Cataloguing</h3>
+        <p>Every transformation is recorded. When leadership asks "where did this number come from?", the answer is a click away — not a two-day investigation. A data catalogue means every dataset is discoverable, described, and owned.</p>
+      </div>
+      <div class="pillar-card reveal reveal-d2">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3>Access Control &amp; Compliance</h3>
+        <p>Role-based access means each person sees only what they are authorised for. Every access event is logged. GDPR, HIPAA, SOX — demonstrating compliance becomes an automated audit export, not a manual reconciliation across shared Drive folders.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section-cases">
+  <div class="container">
+    <div class="reading-col reveal">
+      <p class="eyebrow">Real-World Evidence</p>
+      <h2>When governance fails — and when it works</h2>
+      <p>These are documented, public cases. The consequences of spreadsheet-dependent data management are not hypothetical — they have played out at the scale of national health systems, energy markets, and global retail.</p>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card reveal">
+        <p class="case-tag warn">⚠ Cautionary · Public Health</p>
+        <h3>NHS England lost 15,841 COVID test results to a spreadsheet row limit</h3>
+        <p>In September 2020, Public Health England aggregated daily COVID results in Excel's legacy .xls format — a format capped at 65,536 rows by a design decision made in the 1980s. When the file exceeded that limit, rows were dropped silently. No warning. No alert. 15,841 positive cases went uncontact-traced as a direct result.</p>
+        <div class="case-impact"><strong>Root cause:</strong> No data volume monitoring, no ingestion validation, no schema enforcement. A governed pipeline would have detected the anomaly in real time — the row count dropping mid-day is an obvious signal that any automated check would catch.</div>
+      </div>
+      <div class="case-card reveal reveal-d1">
+        <p class="case-tag warn">⚠ Cautionary · Energy Markets</p>
+        <h3>TransAlta: a copy-paste error cost $24 million</h3>
+        <p>In 2003, Canadian power company TransAlta lost approximately $24 million USD on electricity contracts because a bid spreadsheet contained transposed data from a copy-paste operation. The values were outliers — but without anomaly detection or lineage tracking, the error was submitted and accepted before anyone noticed. The loss was realised before it could be reversed.</p>
+        <div class="case-impact"><strong>Root cause:</strong> Manual data entry with no range validation, no schema enforcement, and no audit trail. A governed data platform applies statistical outlier detection and records every cell edit with a timestamp and author — making this class of error both detectable and traceable.</div>
+      </div>
+      <div class="case-card reveal reveal-d2">
+        <p class="case-tag good">✓ Transformation · Retail</p>
+        <h3>Walmart: Retail Link as a governed data platform for 100,000 suppliers</h3>
+        <p>Walmart's Retail Link gives every supplier real-time, governed access to store-level sales and inventory data. Instead of spreadsheet exports by email, suppliers see a live, validated, role-scoped view of their own product performance across thousands of stores. The platform processes over 2.5 petabytes daily with full lineage, access auditing, and row-level security.</p>
+        <div class="case-impact"><strong>Outcome:</strong> 16% reduction in out-of-stock incidents. Suppliers proactively manage replenishment without waiting for manual reports. Walmart credits this platform as foundational to its supply-chain advantage — an advantage that competitors using spreadsheet exports cannot replicate.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="section-compare">
+  <div class="container">
+    <div class="reading-col reveal">
+      <p class="eyebrow">The Difference</p>
+      <h2>Google Sheets vs. a governed data platform</h2>
+      <p style="margin-top:1rem;color:var(--muted)">This is not a comparison of products — it is a comparison of operating models. Google Sheets is a capable tool. The question is whether your organisation's data operating model can scale, be trusted, and be audited.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th class="col-b">Google Sheets / Drive</th>
+            <th class="col-a">Governed Data Platform</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Version of truth</td>
+            <td class="b">Multiple versions in circulation; "correct" file unclear; manual reconciliation required before every decision</td>
+            <td class="a">Single versioned, timestamped source of record; all consumers read the same data at the same version</td>
+          </tr>
+          <tr>
+            <td>Data quality</td>
+            <td class="b">Depends on the person who entered it; no automated validation; errors propagate silently to all downstream consumers</td>
+            <td class="a">Schema enforced at ingestion; validation rules run automatically on every record; failures quarantined before they propagate</td>
+          </tr>
+          <tr>
+            <td>Audit &amp; lineage</td>
+            <td class="b">Cannot demonstrate where a figure came from or how it was derived; spreadsheet version history is partial and per-file</td>
+            <td class="a">Full lineage graph from source to consumer; every transformation logged; any number is fully reproducible and explainable</td>
+          </tr>
+          <tr>
+            <td>Access control</td>
+            <td class="b">File-level sharing; link sharing creates uncontrolled exposure; no row or column granularity; revocation is manual per file</td>
+            <td class="a">Role-based, row-level security; all access events logged and reportable; revocation is immediate and applies everywhere</td>
+          </tr>
+          <tr>
+            <td>Regulatory compliance</td>
+            <td class="b">Cannot demonstrate consent management, data residency, or right-to-erasure across a folder of spreadsheets</td>
+            <td class="a">GDPR, HIPAA, SOX controls built into the platform; compliance reports generated on demand with full audit trail</td>
+          </tr>
+          <tr>
+            <td>Scale</td>
+            <td class="b">Performance degrades beyond ~100k rows; legacy .xls format has a hard 65,536 row limit that silently drops data</td>
+            <td class="a">Designed for petabyte-scale volume, high velocity, and mixed data types — performance does not degrade as data grows</td>
+          </tr>
+          <tr>
+            <td>Analyst productivity</td>
+            <td class="b">80% of analyst time spent finding, cleaning, and reconciling data across multiple conflicting sources</td>
+            <td class="a">Clean, catalogued, discoverable data — analysts spend time on analysis, not preparation</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-cta">
+  <div class="container">
+    <span class="eyebrow">Next Steps</span>
+    <h2>The right time to start was yesterday.<br>The second-best time is now.</h2>
+    <p>Every month operating on ungoverned spreadsheets is a month of accumulated risk — in data quality, compliance exposure, and analyst productivity. A data platform assessment takes days, not months, and produces a clear picture of where the gaps are and what they are costing you.</p>
+    <div class="cta-steps">
+      <div class="cta-step">
+        <div class="cta-step-num">01</div>
+        <h3>Data Landscape Audit</h3>
+        <p>Map all existing data sources, owners, and consumers. Surface duplication, inconsistency, and compliance exposure.</p>
+      </div>
+      <div class="cta-step">
+        <div class="cta-step-num">02</div>
+        <h3>Platform Architecture</h3>
+        <p>Select the right platform for your scale and budget. Define governance contracts, access model, and migration priority.</p>
+      </div>
+      <div class="cta-step">
+        <div class="cta-step-num">03</div>
+        <h3>Phased Migration</h3>
+        <p>Migrate highest-value, highest-risk data first. Deliver value incrementally while building institutional capability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Sources: Gartner 2022 · Harvard Business Review / TDWI · Forrester Research · Public Health England (September 2020) · TransAlta Corporation (2003) · Walmart Corporate Reporting
+  </div>
+</footer>
+
+<script>
+// ── HERO CANVAS: ambient particle mesh ──────────────────────────────
+(function () {
+  const canvas = document.getElementById('heroCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H, pts = [];
+
+  function resize() {
+    W = canvas.width = canvas.offsetWidth;
+    H = canvas.height = canvas.offsetHeight || window.innerHeight;
+  }
+
+  function mkPt() {
+    return {
+      x: Math.random() * W, y: Math.random() * H,
+      vx: (Math.random() - .5) * .25, vy: (Math.random() - .5) * .25,
+      r: Math.random() * 1.5 + .4, a: Math.random() * .4 + .1
+    };
+  }
+
+  function init() {
+    resize();
+    pts = Array.from({ length: 90 }, mkPt);
+  }
+
+  function frame() {
+    ctx.clearRect(0, 0, W, H);
+    for (let i = 0; i < pts.length; i++) {
+      const p = pts[i];
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < -10 || p.x > W + 10 || p.y < -10 || p.y > H + 10) Object.assign(p, mkPt());
+      for (let j = i + 1; j < pts.length; j++) {
+        const q = pts[j], dx = p.x - q.x, dy = p.y - q.y, d = Math.hypot(dx, dy);
+        if (d < 110) {
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(99,102,241,${.12 * (1 - d / 110)})`;
+          ctx.lineWidth = .5;
+          ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+        }
+      }
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(129,140,248,${p.a})`;
+      ctx.fill();
+    }
+    requestAnimationFrame(frame);
+  }
+
+  init();
+  frame();
+  window.addEventListener('resize', resize);
+}());
+
+// ── CHAOS CANVAS ───────────────────────────────────────────────────
+(function () {
+  const canvas = document.getElementById('chaosCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const H = 370;
+  let W, nodes = [], tick = 0;
+
+  const NAMES = [
+    'Q3_Sales_FINAL.xlsx', 'Copy of Report v3', 'DATA_CORRECT_USE_THIS',
+    'Last year numbers????', 'Marketing_June_REVISED', 'DO NOT EDIT v2',
+    '2023_Data_(2).csv', 'revenue_FINAL_FINAL', 'Forecast_OLD_2',
+    'Paul_edits_May.xlsx', 'MASTER FILE (1).xlsx', 'actuals_v7_REAL',
+    'temp_dont_delete', 'Q4 numbers (3)', 'APPROVED_final_v9',
+    'backup_backup_final', 'ops_data_SHARE_THIS', 'YE_consolidated???'
+  ];
+
+  function rrect(x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+  }
+
+  function Node(i) {
+    ctx.font = '10px ' + getComputedStyle(document.body).getPropertyValue('--ff-mono').trim() || 'monospace';
+    this.label = NAMES[i % NAMES.length];
+    this.w = Math.min(ctx.measureText(this.label).width + 22, W - 40);
+    this.h = 26;
+    this.x = 30 + Math.random() * (W - this.w - 60);
+    this.y = 20 + Math.random() * (H - this.h - 40);
+    this.vx = (Math.random() - .5) * .35;
+    this.vy = (Math.random() - .5) * .35;
+    this.err = Math.random() < .42;
+    this.conns = [];
+    this.alpha = 0;
+  }
+
+  Node.prototype.update = function () {
+    this.x += this.vx; this.y += this.vy;
+    if (this.x < 8) this.vx += .04;
+    if (this.x + this.w > W - 8) this.vx -= .04;
+    if (this.y < 8) this.vy += .04;
+    if (this.y + this.h > H - 8) this.vy -= .04;
+    this.vx *= .998; this.vy *= .998;
+    if (this.alpha < .9) this.alpha = Math.min(.9, this.alpha + .012);
+  };
+
+  Node.prototype.draw = function () {
+    ctx.save();
+    ctx.globalAlpha = this.alpha;
+    ctx.shadowColor = this.err ? 'rgba(220,38,38,.35)' : 'rgba(0,0,0,.5)';
+    ctx.shadowBlur = 6; ctx.shadowOffsetY = 2;
+    rrect(this.x, this.y, this.w, this.h, 4);
+    ctx.fillStyle = this.err ? '#2D1515' : '#1E293B';
+    ctx.fill();
+    ctx.strokeStyle = this.err ? '#DC2626' : '#334155';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0;
+    ctx.font = '10px SFMono-Regular, Consolas, monospace';
+    ctx.fillStyle = this.err ? '#FCA5A5' : '#94A3B8';
+    ctx.fillText(this.label, this.x + 9, this.y + 17);
+    if (this.err) {
+      ctx.fillStyle = '#DC2626';
+      ctx.beginPath(); ctx.arc(this.x + this.w - 8, this.y + 7, 5, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = 'white';
+      ctx.font = 'bold 7px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('!', this.x + this.w - 8, this.y + 10);
+      ctx.textAlign = 'left';
+    }
+    ctx.restore();
+  };
+
+  function resize() {
+    W = canvas.width = canvas.offsetWidth;
+    canvas.height = H;
+    canvas.style.height = H + 'px';
+  }
+
+  function init() {
+    resize();
+    nodes = [];
+    const count = Math.max(8, Math.min(Math.floor(W / 90), 16));
+    for (let i = 0; i < count; i++) {
+      setTimeout(() => {
+        const n = new Node(i);
+        nodes.forEach((o, j) => { if (Math.random() < .3) n.conns.push(j); });
+        nodes.push(n);
+      }, i * 150);
+    }
+  }
+
+  function frame() {
+    tick++;
+    ctx.clearRect(0, 0, W, H);
+
+    // connections
+    for (let i = 0; i < nodes.length; i++) {
+      const n = nodes[i];
+      n.conns.forEach(j => {
+        if (j >= nodes.length) return;
+        const o = nodes[j];
+        const mx = (n.x + n.w / 2 + o.x + o.w / 2) / 2;
+        const my = (n.y + n.h / 2 + o.y + o.h / 2) / 2;
+        const cx = mx + Math.sin(tick * .007 + i) * 28;
+        const cy = my + Math.cos(tick * .007 + j) * 18;
+        ctx.save();
+        ctx.globalAlpha = Math.min(n.alpha, o.alpha) * .65;
+        const conflict = n.err || o.err;
+        ctx.setLineDash(conflict ? [3, 5] : []);
+        ctx.strokeStyle = conflict ? '#EF4444' : '#94A3B8';
+        ctx.lineWidth = conflict ? 1 : .8;
+        ctx.beginPath();
+        ctx.moveTo(n.x + n.w / 2, n.y + n.h / 2);
+        ctx.quadraticCurveTo(cx, cy, o.x + o.w / 2, o.y + o.h / 2);
+        ctx.stroke();
+        ctx.restore();
+      });
+    }
+    nodes.forEach(n => { n.update(); n.draw(); });
+    requestAnimationFrame(frame);
+  }
+
+  init();
+  frame();
+  window.addEventListener('resize', () => { resize(); nodes.forEach(n => { if (n.x + n.w > W - 10) n.x = W - n.w - 20; }); });
+}());
+
+// ── FLOW CANVAS ────────────────────────────────────────────────────
+(function () {
+  const canvas = document.getElementById('flowCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const CH = 430;
+  let W, particles = [], tick = 0, spawnT = 0;
+
+  const SOURCES = [
+    { label: 'CRM', sub: 'Salesforce', col: '#60A5FA' },
+    { label: 'Finance', sub: 'QuickBooks', col: '#34D399' },
+    { label: 'Sheets', sub: 'Google Sheets', col: '#FBBF24' },
+    { label: 'Ops DB', sub: 'PostgreSQL', col: '#A78BFA' },
+    { label: 'External', sub: 'APIs / FTP', col: '#F472B6' }
+  ];
+  const CONSUMERS = [
+    { label: 'Analytics', sub: 'Dashboards', col: '#60A5FA' },
+    { label: 'Compliance', sub: 'Regulatory', col: '#34D399' },
+    { label: 'Data Science', sub: 'ML Models', col: '#A78BFA' },
+    { label: 'Reporting', sub: 'Exec Reports', col: '#F472B6' }
+  ];
+
+  function getLayout() {
+    const sx = W * .11, gx = W * .5, cx = W * .89;
+    const ss = CH / (SOURCES.length + 1), cs = CH / (CONSUMERS.length + 1);
+    return {
+      srcs: SOURCES.map((s, i) => ({ ...s, x: sx, y: ss * (i + 1) })),
+      cons: CONSUMERS.map((c, i) => ({ ...c, x: cx, y: cs * (i + 1) })),
+      gov: { x: gx, y: CH / 2 }
+    };
+  }
+
+  function Particle(si, layout) {
+    const src = layout.srcs[si];
+    this.si = si; this.ci = Math.floor(Math.random() * CONSUMERS.length);
+    this.col = src.col; this.phase = 0; this.t = 0;
+    this.spd = .004 + Math.random() * .003;
+    this.fail = Math.random() < .1;
+    this.procDur = .25 + Math.random() * .35;
+    this.layout = layout;
+  }
+
+  Particle.prototype.update = function () {
+    this.t += this.spd;
+    if (this.phase === 0 && this.t >= 1) { this.phase = this.fail ? 3 : 1; this.t = 0; }
+    else if (this.phase === 1 && this.t >= this.procDur) { this.phase = 2; this.t = 0; this.col = '#34D399'; }
+    else if (this.phase === 2 && this.t >= 1) { this.phase = 3; }
+  };
+
+  Particle.prototype.pos = function () {
+    const { srcs, cons, gov } = this.layout;
+    const s = srcs[this.si], c = cons[this.ci];
+    const t = Math.max(0, Math.min(1, this.t));
+    if (this.phase === 0) {
+      const cpx = (s.x + gov.x) / 2;
+      return { x: (1-t)*(1-t)*s.x + 2*(1-t)*t*cpx + t*t*gov.x, y: (1-t)*(1-t)*s.y + 2*(1-t)*t*s.y + t*t*gov.y };
+    }
+    if (this.phase === 1) {
+      const a = t * Math.PI * 5;
+      return { x: gov.x + Math.cos(a) * 14, y: gov.y + Math.sin(a) * 14 };
+    }
+    if (this.phase === 2) {
+      const cpx = (gov.x + c.x) / 2;
+      return { x: (1-t)*(1-t)*gov.x + 2*(1-t)*t*cpx + t*t*c.x, y: (1-t)*(1-t)*gov.y + 2*(1-t)*t*c.y + t*t*c.y };
+    }
+    return { x: 0, y: 0 };
+  };
+
+  Particle.prototype.draw = function () {
+    if (this.phase === 3) return;
+    const p = this.pos();
+    const col = (this.fail && this.phase === 0) ? '#EF4444' : this.col;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+    ctx.fillStyle = col;
+    ctx.shadowColor = col; ctx.shadowBlur = 5;
+    ctx.fill();
+    ctx.shadowBlur = 0;
+  };
+
+  function drawNode(x, y, label, sub, col, isGov) {
+    const r = isGov ? 46 : 30;
+    ctx.save();
+    if (isGov) {
+      // glow
+      const g = ctx.createRadialGradient(x, y, r * .4, x, y, r * 1.5);
+      g.addColorStop(0, 'rgba(67,56,202,.18)'); g.addColorStop(1, 'rgba(67,56,202,0)');
+      ctx.beginPath(); ctx.arc(x, y, r * 1.5, 0, Math.PI * 2);
+      ctx.fillStyle = g; ctx.fill();
+      // pulse ring
+      const pr = r + 9 + 3 * Math.sin(tick * .04);
+      ctx.beginPath(); ctx.arc(x, y, pr, 0, Math.PI * 2);
+      ctx.strokeStyle = `rgba(99,102,241,${.25 + .15 * Math.sin(tick * .04)})`;
+      ctx.lineWidth = 1.5; ctx.stroke();
+      // body
+      ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2);
+      ctx.fillStyle = '#1E293B'; ctx.fill();
+      ctx.strokeStyle = '#4F46E5'; ctx.lineWidth = 2; ctx.stroke();
+      // shield path
+      ctx.strokeStyle = '#6366F1'; ctx.lineWidth = 1.5; ctx.fillStyle = 'none';
+      const sz = 14;
+      ctx.beginPath();
+      ctx.moveTo(x, y - sz);
+      ctx.lineTo(x + sz * .65, y - sz * .35);
+      ctx.lineTo(x + sz * .65, y + sz * .15);
+      ctx.quadraticCurveTo(x + sz * .65, y + sz * .75, x, y + sz);
+      ctx.quadraticCurveTo(x - sz * .65, y + sz * .75, x - sz * .65, y + sz * .15);
+      ctx.lineTo(x - sz * .65, y - sz * .35);
+      ctx.closePath();
+      ctx.fillStyle = 'rgba(99,102,241,.25)'; ctx.fill();
+      ctx.stroke();
+      ctx.fillStyle = '#C7D2FE'; ctx.font = 'bold 9px system-ui,sans-serif';
+      ctx.textAlign = 'center'; ctx.fillText('Data Platform', x, y + r + 16);
+      ctx.fillStyle = '#475569'; ctx.font = '8px system-ui,sans-serif';
+      ctx.fillText('Governance Layer', x, y + r + 28);
+    } else {
+      ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2);
+      ctx.fillStyle = '#1E293B'; ctx.fill();
+      ctx.strokeStyle = col; ctx.lineWidth = 1.5; ctx.stroke();
+      ctx.beginPath(); ctx.arc(x, y - 8, 4.5, 0, Math.PI * 2);
+      ctx.fillStyle = col; ctx.fill();
+      ctx.fillStyle = '#E2E8F0'; ctx.font = 'bold 8.5px system-ui,sans-serif';
+      ctx.textAlign = 'center'; ctx.fillText(label, x, y + 5);
+      ctx.fillStyle = '#475569'; ctx.font = '7.5px system-ui,sans-serif';
+      ctx.fillText(sub, x, y + 16);
+    }
+    ctx.restore();
+  }
+
+  function drawGuides(layout) {
+    const { srcs, cons, gov } = layout;
+    ctx.save();
+    ctx.strokeStyle = '#1A2236'; ctx.lineWidth = 1; ctx.setLineDash([3, 7]);
+    srcs.forEach(s => {
+      ctx.beginPath();
+      ctx.moveTo(s.x + 30, s.y);
+      ctx.quadraticCurveTo((s.x + gov.x) / 2, s.y, gov.x - 46, gov.y);
+      ctx.stroke();
+    });
+    cons.forEach(c => {
+      ctx.beginPath();
+      ctx.moveTo(gov.x + 46, gov.y);
+      ctx.quadraticCurveTo((gov.x + c.x) / 2, c.y, c.x - 30, c.y);
+      ctx.stroke();
+    });
+    ctx.restore();
+    ctx.save();
+    ctx.fillStyle = '#2D3748'; ctx.font = '8px system-ui,sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('DATA SOURCES', srcs[0].x, 14);
+    ctx.fillText('CONSUMERS', cons[0].x, 14);
+    ctx.restore();
+  }
+
+  function resize() {
+    W = canvas.width = canvas.offsetWidth;
+    canvas.height = CH;
+    canvas.style.height = CH + 'px';
+    particles = [];
+  }
+
+  function frame() {
+    tick++;
+    ctx.clearRect(0, 0, W, CH);
+    const layout = getLayout();
+    drawGuides(layout);
+    layout.cons.forEach(c => drawNode(c.x, c.y, c.label, c.sub, c.col, false));
+    drawNode(layout.gov.x, layout.gov.y, '', '', '', true);
+    layout.srcs.forEach(s => drawNode(s.x, s.y, s.label, s.sub, s.col, false));
+    spawnT++;
+    if (spawnT > 45) {
+      particles.push(new Particle(Math.floor(Math.random() * SOURCES.length), layout));
+      spawnT = 0;
+    }
+    particles.forEach(p => { p.update(); p.draw(); });
+    particles = particles.filter(p => p.phase !== 3);
+    requestAnimationFrame(frame);
+  }
+
+  resize();
+  frame();
+  window.addEventListener('resize', resize);
+}());
+
+// ── COUNTERS ───────────────────────────────────────────────────────
+function runCounter(el) {
+  const target = parseFloat(el.dataset.target);
+  const isFloat = !!el.dataset.float;
+  const isComma = !!el.dataset.comma;
+  const dur = 2200;
+  const start = performance.now();
+  (function tick(now) {
+    const p = Math.min((now - start) / dur, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    const v = target * ease;
+    el.textContent = isFloat ? v.toFixed(1) : isComma ? Math.floor(v).toLocaleString() : Math.floor(v);
+    if (p < 1) requestAnimationFrame(tick);
+  }(start));
+}
+
+// ── INTERSECTION OBSERVER ──────────────────────────────────────────
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('in');
+    e.target.querySelectorAll('.counter').forEach(runCounter);
+    io.unobserve(e.target);
+  });
+}, { threshold: 0.18 });
+
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body></html>
