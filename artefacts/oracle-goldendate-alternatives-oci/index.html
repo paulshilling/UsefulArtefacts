@@ -26,10 +26,17 @@
     --purple:       #7A60B8;
     --purple-dim:   #3A2C68;
 
+    /* brighter tints used as text on top of the -dim badge backgrounds above,
+       so badge text clears WCAG AA contrast (4.5:1+) at small font sizes */
+    --green-fg:     #6EE7B7;
+    --red-fg:       #FCA5A5;
+    --purple-fg:    #C4B5FD;
+    --amber-fg:     #FCD34D;
+
     --text:         #B8CDE0;
     --text-hi:      #D8EAF8;
-    --text-muted:   #4E6E8E;
-    --text-dim:     #28415A;
+    --text-muted:   #8CA3BC;
+    --text-dim:     #6B89A5;
 
     --serif:        Georgia, 'Times New Roman', serif;
     --sans:         system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -182,10 +189,11 @@
 
   .critical-alert .alert-head {
     font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.16em;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--red);
+    color: var(--red-fg);
     margin-bottom: 8px;
   }
 
@@ -251,18 +259,19 @@
   .verdict-badge {
     flex-shrink: 0;
     font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     padding: 4px 10px;
     border-radius: 2px;
     white-space: nowrap;
   }
 
-  .verdict-yes    { background: var(--green-dim);  color: var(--green);  border: 1px solid var(--green); }
-  .verdict-no     { background: var(--red-dim);    color: var(--red);    border: 1px solid var(--red); }
-  .verdict-warn   { background: var(--amber-dim);  color: var(--amber);  border: 1px solid var(--amber); }
-  .verdict-unk    { background: var(--purple-dim); color: var(--purple); border: 1px solid var(--purple); }
+  .verdict-yes    { background: var(--green-dim);  color: var(--green-fg);  border: 1px solid var(--green-fg); }
+  .verdict-no     { background: var(--red-dim);    color: var(--red-fg);    border: 1px solid var(--red-fg); }
+  .verdict-warn   { background: var(--amber-dim);  color: var(--amber-fg);  border: 1px solid var(--amber-fg); }
+  .verdict-unk    { background: var(--purple-dim); color: var(--purple-fg); border: 1px solid var(--purple-fg); }
   .verdict-elim   { background: var(--surface-3);  color: var(--text-muted); border: 1px solid var(--border); }
 
   .tool-card-body { padding: 20px 24px; }
@@ -318,17 +327,18 @@
   .claim-badge {
     flex-shrink: 0;
     font-family: var(--mono);
-    font-size: 9px;
+    font-weight: 600;
+    font-size: 10.5px;
     padding: 2px 7px;
     border-radius: 2px;
     margin-top: 2px;
     white-space: nowrap;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
   }
 
-  .cb-confirmed { background: var(--green-dim);  color: var(--green); }
-  .cb-refuted   { background: var(--red-dim);    color: var(--red); }
-  .cb-unverif   { background: var(--purple-dim); color: var(--purple); }
+  .cb-confirmed { background: var(--green-dim);  color: var(--green-fg); }
+  .cb-refuted   { background: var(--red-dim);    color: var(--red-fg); }
+  .cb-unverif   { background: var(--purple-dim); color: var(--purple-fg); }
   .cb-source    { background: var(--surface-3);  color: var(--text-muted); }
 
   .claim-text { color: var(--text); }
@@ -414,8 +424,9 @@
 
   .info-box .info-head {
     font-family: var(--mono);
-    font-size: 9px;
-    letter-spacing: 0.16em;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--blue);
     margin-bottom: 8px;
