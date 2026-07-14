@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)#judgment-calls -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><!--<base href="/_f/1784035898-f4bf/">--><base href="."><script>window.__FRAME_PREAMBLE={"capabilities":{"downloads":"downloads.DUzXFHNF.js","mcp":"mcp.CLzOm9JX.js","permissions":"permissions.C9OCnDjh.js","self":"self.DqF_PxOe.js"},"transforms":"_transforms.DYk1Ltlh.js","comments":"_comments.CTmG5kkF.js"}</script><script>(function(){"use strict";const ce="modulepreload",le=function(e){return"/"+e},ue={},x=function(t,n,u){let o=Promise.resolve();function s(f){const a=new Event("vite:preloadError",{cancelable:!0});if(a.payload=f,window.dispatchEvent(a),!a.defaultPrevented)throw f}return o.then(f=>{for(const a of f||[])a.status==="rejected"&&s(a.reason);return t().catch(s)})},K=["light","dark","system"];function G(e){if(e==null||typeof e!="object")return!1;const t=e.__frame_init;return t!=null&&typeof t=="object"}function J(e){return e!=null&&typeof e=="object"&&e.__frame_size_poke===!0}function V(e){if(e==null||typeof e!="object")return!1;const t=e.__frame_theme;if(t==null||typeof t!="object")return!1;const n=t.theme;return typeof n=="string"&&K.includes(n)}function Y(e){try{typeof reportError=="function"?reportError(e):setTimeout(()=>{throw e},0)}catch{}}function z(e){if(window===top||e.type==="auxclick"&&e.button!==1)return;const t=e.composedPath?e.composedPath():[e.target];let n=null;for(let f=0;f<t.length;f++){const a=t[f];if(a&&a.matches&&a.matches("a[href],area[href]")){n=a;break}}if(!n&&e.target&&e.target.closest&&(n=e.target.closest("a[href],area[href]")),!n)return;const u=n.getAttribute("href");if(!u)return;let o,s;try{o=new URL(u,document.baseURI),s=new URL(document.baseURI).origin}catch{return}(o.protocol==="http:"||o.protocol==="https:")&&o.origin!==s&&(e.preventDefault(),parent.postMessage({__frame_nav:!0,url:o.href},"*"))}const D={};function T(e){if(window===top)return;const t=Date.now();t-(D[e]||0)<500||(D[e]=t,parent.postMessage({__frame_engaged:!0,kind:e},"*"))}const Q=2e3,U=["wheel","touchstart","touchmove","keydown","pointerdown"];let B=0;function X(e){e.isTrusted&&(B=Date.now())}function Z(){addEventListener("click",z,!0),addEventListener("auxclick",z,!0)}function ee(){for(let e=0;e<U.length;e++)addEventListener(U[e],X,{capture:!0,passive:!0});addEventListener("scroll",e=>{e.isTrusted&&Date.now()-B<Q&&T("scroll")},{capture:!0,passive:!0}),addEventListener("pointermove",e=>{e.isTrusted&&T("pointer")},{capture:!0,passive:!0}),addEventListener("click",e=>{e.isTrusted&&T("click")},{capture:!0,passive:!0})}function te(e,t,n){const u=[...t.values()].filter(o=>o.targets.some(s=>s.startsWith(e+".")));return{wrap(o,s){const f=`${e}.${o}`,a=u.filter(i=>i.targets.includes(f));return a.length===0?(...i)=>{try{return s(...i)}catch(p){return Promise.reject(p)}}:(...i)=>{let p=i;for(const c of a){const l=c.module.parameters;if(l)try{p=l(p)}catch{return Promise.reject({code:"transform_error",id:c.id,scope:e,message:"parameters transform failed"})}}let h;try{h=s(...p)}catch(c){h=Promise.reject(c)}return h.then(c=>{for(let l=a.length-1;l>=0;l--){const m=a[l],d=m.module.returns;if(d)try{c=d(c)}catch{return n({id:m.id,scope:e,leg:"returns"}),c}}return c},c=>{for(let l=a.length-1;l>=0;l--){const m=a[l],d=m.module.throws;if(d)try{c=d(c)}catch{return n({id:m.id,scope:e,leg:"throws"}),Promise.reject(c)}}return Promise.reject(c)})}}}}function ne(e,t,n,u=()=>{}){const o=new Set(e.changes??[]),s=new Map;for(const f of o){const a=t[f];a&&s.set(f,a)}return{contract:e.contract,changes:o,flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:s,shellOrigin:n.shellOrigin,mount:n.mount,pipe:f=>te(f,s,u)}}(function(){const e=Object.defineProperty,t=globalThis,n=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let u=0;for(let o=0;o<n.length;o++){const s=n[o];try{e(t,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[s]}catch{}try{e(t,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[s]=="function"&&u++}if(u&&window!==top)try{parent.postMessage({__frame_rtc_lockdown_failed:u},"*")}catch{}})();const re=1e4,oe=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function se(e){for(const t of oe)if(t.endsWith(":*"))try{const n=new URL(e);if(`${n.protocol}//${n.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}const R=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities??{}}),A=window.__FRAME_PREAMBLE?.transforms,k=window.__FRAME_PREAMBLE?.comments,C=/^[\w.-]+\.js$/,ie=/^[a-z][a-z0-9_-]{0,63}$/;let F=null,v=null;function N(e,t,n){try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!0,enumerable:!0})}catch{}}}let I=!1;function H(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,I=!0):I&&(delete t.dataset.theme,t.style.colorScheme="",I=!1)}const E={mcp:{watchTool:{handlerArg:3}}},P=new Map;function ae(e,t){const n=P.get(e);if(!n)return;Object.assign(n.impl,t),n.impl.__settled=()=>Promise.reject({code:"capability_removed",message:`${e}: method not in this runtime`});const u=n.queue;n.queue=[];for(const o of u){const s=t[o.method];if(s)if(E[e]?.[o.method])try{o.resolve(s(...o.args))}catch{O(o,E[e][o.method].handlerArg,{code:"transform_error",message:`${e}.${o.method} rejected its arguments`})}else s(...o.args).then(o.resolve,o.reject);else{const f={code:"capability_removed",message:`${e}.${o.method} is not in this runtime`},a=E[e]?.[o.method];if(a){O(o,a.handlerArg,f);continue}o.reject(f)}}}function $(e,t){const n=P.get(e);if(!n)return;n.impl.__settled=()=>Promise.reject(t);const u=n.queue;n.queue=[];for(const o of u){const s=E[e]?.[o.method];if(s){O(o,s.handlerArg,t);continue}o.reject(t)}}function O(e,t,n){if(e.syncState?.dead)return;const u=e.args[t];typeof u=="function"&&queueMicrotask(()=>{if(!e.syncState?.dead)try{u({type:"error",error:n})}catch(o){Y(o)}})}const q=Object.getOwnPropertyDescriptor(window,"claude");if(window!==top&&!(q&&q.writable===!1)){Z(),ee();const e=q?.value??{};N(window,"claude",e);const t=i=>{const p={impl:Object.create(null),queue:[]};P.set(i,p);const h=new Proxy(p.impl,{get:(c,l)=>{if(typeof l!="string"||l==="then"||l==="toJSON"||l==="valueOf")return;if(l==="toString")return Object.prototype.toString;const m=E[i]?.[l];return m?(...d)=>{if(typeof d[m.handlerArg]!="function")throw new TypeError(`${i}.${l} requires a handler function`);const g=c[l];if(g)return g(...d);if(c.__settled){const _={dead:!1},S={args:[...d],syncState:_};return c.__settled().catch(j=>O(S,m.handlerArg,j)),()=>{_.dead=!0}}let y=null;const w={dead:!1};return p.queue.push({method:l,args:d,resolve:_=>{y=typeof _=="function"?_:null,w.dead&&y?.()},reject:()=>{},syncState:w}),()=>{w.dead=!0,y?.()}}:(...d)=>{const g=c[l]??c.__settled;return g?g(...d):new Promise((y,w)=>{p.queue.push({method:l,args:d,resolve:y,reject:w})})}},set:()=>!1});N(e,i,h)};for(const i of Object.keys(R)){if(e[i]!==void 0){N(e,i,e[i]);continue}t(i)}let n=null,u=null,o=0;const s=i=>{i.source!==parent||!se(i.origin)||G(i.data)&&(n=i.data.__frame_init,v=i.origin,removeEventListener("message",s),clearTimeout(o),u?.())};addEventListener("message",s),parent.postMessage({__frame_connect:!0},"*");const f=new Promise(i=>{u=i,o=setTimeout(()=>{removeEventListener("message",s),i()},re)}),a=document.readyState==="loading"?new Promise(i=>document.addEventListener("DOMContentLoaded",()=>i(),{once:!0})):Promise.resolve();f.then(async()=>{if(!n||!v){for(const r of P.keys())$(r,{code:"not_granted",message:"frame initialization did not arrive - capability unavailable"});return}H(n.theme);const i=v;let p=!1;addEventListener("message",r=>{if(r.source!==parent||r.origin!==i)return;V(r.data)&&H(r.data.__frame_theme.theme);const b=r.data?.__fc_mode;b&&typeof b=="object"&&!p&&k&&C.test(k)&&(p=!0,h(k).then(L=>L.install?.(i,b.on===!0)).catch(()=>{}))});const h=r=>x(()=>import("/_runtime/"+r),void 0),c=Object.keys(n.capabilities??{});for(const r of c)Object.hasOwn(R,r)||ie.test(r)&&e[r]===void 0&&(t(r),$(r,{code:"capability_disabled",message:"capability not in this runtime generation"}));const l=c.filter(r=>Object.hasOwn(R,r)).map(r=>[r,R[r]]).filter(r=>typeof r[1]=="string"&&C.test(r[1])),[m,...d]=await Promise.allSettled([A&&C.test(A)?h(A):Promise.resolve({}),...l.map(([,r])=>h(r))]),g=v;F=ne(n,m.status==="fulfilled"&&m.value?.TRANSFORMS||{},{shellOrigin:g,mount:ae},r=>parent.postMessage({__frame_cap_telemetry:r},g));const y=r=>parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:r}},g),w=F;d.forEach((r,b)=>{const L=l[b][0];if(r.status!=="fulfilled"){y(L);return}try{r.value?.install?.(w)}catch{y(L)}});for(const[r,b]of P)b.queue.length===0&&Object.keys(b.impl).length>0||$(r,{code:c.includes(r)?"capability_disabled":"not_granted",message:"capability not available in this session"});await a,parent.postMessage({__frame_ready:!0},v);let _=-1,S=0;const j=()=>{S=0;const r=Math.max(document.documentElement.scrollHeight,document.body?document.body.scrollHeight:0);r!==_&&(_=r,parent.postMessage({__frame_size:!0,h:r},g))},M=()=>{S||(S=setTimeout(j,200))},W=new ResizeObserver(M);W.observe(document.documentElement),document.body&&W.observe(document.body),document.addEventListener("load",M,!0),document.fonts?.ready.then(M,()=>{}),addEventListener("beforeprint",()=>{_=-1,j()}),M(),addEventListener("message",r=>{r.source!==parent||r.origin!==g||J(r.data)&&(_=-1,M())})})}})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>OAC Gen2 Governance Standard</title>
+<style>
+  :root{
+    --paper:#F4F6F5;
+    --paper-raised:#FFFFFF;
+    --ink:#16202A;
+    --ink-soft:#4B5A63;
+    --line:rgba(22,32,42,0.13);
+    --accent:#2B6E63;
+    --accent-soft:#DCEAE6;
+    --accent-ink:#163B34;
+    --verified:#2F7D5A;
+    --verified-soft:#E1EFE6;
+    --field:#A2650E;
+    --field-soft:#F5E9D6;
+    --judgment:#6B4FA0;
+    --judgment-soft:#EAE3F5;
+    --code-bg:#E9EDEC;
+    --shadow: 0 1px 2px rgba(22,32,42,0.06), 0 8px 24px -12px rgba(22,32,42,0.18);
+    --serif: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, "Noto Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#121818;
+      --paper-raised:#182020;
+      --ink:#E7ECEA;
+      --ink-soft:#A9B6B2;
+      --line:rgba(231,236,234,0.14);
+      --accent:#5FBFA9;
+      --accent-soft:#1B2E2A;
+      --accent-ink:#B7E8DC;
+      --verified:#5FBF8A;
+      --verified-soft:#193226;
+      --field:#D99A44;
+      --field-soft:#2E2415;
+      --judgment:#B79FE0;
+      --judgment-soft:#251E36;
+      --code-bg:#1B2323;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#121818; --paper-raised:#182020; --ink:#E7ECEA; --ink-soft:#A9B6B2;
+    --line:rgba(231,236,234,0.14); --accent:#5FBFA9; --accent-soft:#1B2E2A; --accent-ink:#B7E8DC;
+    --verified:#5FBF8A; --verified-soft:#193226; --field:#D99A44; --field-soft:#2E2415;
+    --judgment:#B79FE0; --judgment-soft:#251E36; --code-bg:#1B2323;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
+  }
+  :root[data-theme="light"]{
+    --paper:#F4F6F5; --paper-raised:#FFFFFF; --ink:#16202A; --ink-soft:#4B5A63;
+    --line:rgba(22,32,42,0.13); --accent:#2B6E63; --accent-soft:#DCEAE6; --accent-ink:#163B34;
+    --verified:#2F7D5A; --verified-soft:#E1EFE6; --field:#A2650E; --field-soft:#F5E9D6;
+    --judgment:#6B4FA0; --judgment-soft:#EAE3F5; --code-bg:#E9EDEC;
+    --shadow: 0 1px 2px rgba(22,32,42,0.06), 0 8px 24px -12px rgba(22,32,42,0.18);
+  }
+
+  *{box-sizing:border-box;}
+  html{background:var(--paper);}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--sans); font-size:16px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  h1,h2,h3,h4{font-family:var(--serif); text-wrap:balance; font-weight:600; color:var(--ink); margin:0;}
+  a{color:var(--accent);}
+  code, .mono{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+  /* ---------- Masthead ---------- */
+  .masthead{
+    position:relative; overflow:hidden;
+    background:linear-gradient(180deg, var(--accent-soft), var(--paper) 78%);
+    border-bottom:1px solid var(--line);
+    padding: 4.5rem 2rem 3rem;
+  }
+  .masthead::after{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:0.55;
+    background-image:
+      repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px calc(12.5% - 1px)),
+      repeating-linear-gradient(0deg, var(--line) 0 1px, transparent 1px calc(25% - 1px));
+    background-position: right -1px top -1px;
+    background-size: 32rem 16rem;
+    mask-image: linear-gradient(180deg, black, transparent 85%);
+  }
+  .masthead-inner{max-width:52rem; margin:0 auto; position:relative;}
+  .eyebrow{
+    font-family:var(--mono); font-size:0.78rem; letter-spacing:0.09em; text-transform:uppercase;
+    color:var(--accent-ink); background:var(--accent-soft); border:1px solid var(--line);
+    display:inline-flex; align-items:center; gap:0.5em; padding:0.35em 0.8em; border-radius:100px;
+    margin-bottom:1.4rem;
+  }
+  .masthead h1{font-size:clamp(2.1rem, 4.2vw, 3rem); line-height:1.08; letter-spacing:-0.01em;}
+  .masthead p.lede{
+    font-size:1.1rem; color:var(--ink-soft); max-width:42rem; margin-top:1.1rem;
+  }
+  .meta-row{
+    display:flex; flex-wrap:wrap; gap:0.6rem 1.6rem; margin-top:2rem; font-size:0.88rem; color:var(--ink-soft);
+  }
+  .meta-row dt{font-family:var(--mono); text-transform:uppercase; letter-spacing:0.06em; font-size:0.72rem; color:var(--ink-soft); opacity:0.8;}
+  .meta-row dd{margin:0; color:var(--ink); font-weight:600;}
+  .meta-item{display:flex; flex-direction:column; gap:0.15rem;}
+
+  /* ---------- Layout ---------- */
+  .layout{
+    max-width:78rem; margin:0 auto; padding:0 2rem;
+    display:grid; grid-template-columns: 15.5rem minmax(0,1fr); gap:3rem;
+  }
+  @media (max-width: 920px){
+    .layout{grid-template-columns:1fr; padding:0;}
+  }
+
+  nav.rail{
+    position:sticky; top:0; align-self:start; max-height:100vh; overflow-y:auto;
+    padding:2.2rem 0 2rem;
+  }
+  @media (max-width: 920px){
+    nav.rail{
+      position:static; max-height:none; overflow:visible; padding:1rem 1rem 0.5rem;
+      border-bottom:1px solid var(--line);
+    }
+    nav.rail ol{display:flex; flex-wrap:nowrap; overflow-x:auto; gap:0; -webkit-overflow-scrolling:touch;}
+    nav.rail li{flex:0 0 auto;}
+  }
+  nav.rail ol{list-style:none; margin:0; padding:0; counter-reset:area;}
+  nav.rail a{
+    display:flex; gap:0.6rem; align-items:baseline; text-decoration:none; color:var(--ink-soft);
+    font-size:0.87rem; padding:0.4rem 0.6rem; border-radius:6px; white-space:nowrap;
+  }
+  nav.rail a:hover{background:var(--accent-soft); color:var(--accent-ink);}
+  nav.rail .num{font-family:var(--mono); color:var(--accent); font-size:0.78rem; min-width:1.4em;}
+  nav.rail .divider{height:1px; background:var(--line); margin:0.9rem 0.6rem;}
+  nav.rail .rail-label{
+    font-family:var(--mono); font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em;
+    color:var(--ink-soft); opacity:0.7; padding:0 0.6rem; margin-bottom:0.3rem;
+  }
+
+  main{min-width:0; padding:2.2rem 0 6rem;}
+  section.area{
+    padding: 2.6rem 0; border-bottom:1px solid var(--line);
+    scroll-margin-top:1.5rem;
+  }
+  section.area:first-of-type{padding-top:0.4rem;}
+
+  .area-head{display:flex; gap:1rem; align-items:baseline; margin-bottom:0.3rem;}
+  .area-num{
+    font-family:var(--mono); color:var(--accent); font-size:1rem; font-weight:600;
+  }
+  .area-head h2{font-size:1.55rem;}
+  .why{
+    font-size:1.02rem; color:var(--ink-soft); max-width:42rem; margin-top:0.7rem;
+  }
+
+  .badge{
+    display:inline-flex; align-items:center; gap:0.4em; font-family:var(--mono);
+    font-size:0.7rem; letter-spacing:0.04em; text-transform:uppercase; font-weight:600;
+    padding:0.28em 0.7em; border-radius:100px; margin:1.1rem 0 0.2rem;
+  }
+  .badge.verified{background:var(--verified-soft); color:var(--verified);}
+  .badge.field{background:var(--field-soft); color:var(--field);}
+  .badge::before{content:""; width:0.5em; height:0.5em; border-radius:50%; background:currentColor;}
+
+  h3.sub{font-size:1.05rem; font-family:var(--sans); font-weight:700; margin-top:1.6rem; margin-bottom:0.5rem;}
+  .area p{max-width:42rem; margin:0.7rem 0;}
+  .area ul, .area ol.std-list{max-width:42rem; margin:0.6rem 0; padding-left:1.3rem;}
+  .area li{margin:0.35rem 0;}
+
+  .standard-box{
+    background:var(--paper-raised); border:1px solid var(--line); border-radius:10px;
+    padding:1.2rem 1.4rem; margin:1rem 0; box-shadow:var(--shadow); max-width:42rem;
+  }
+  .standard-box h4{font-family:var(--sans); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent-ink); margin-bottom:0.6rem;}
+  .standard-grid{display:grid; grid-template-columns:1fr 1fr; gap:1rem;}
+  @media (max-width:600px){.standard-grid{grid-template-columns:1fr;}}
+  .standard-col h5{font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-soft); margin:0 0 0.4rem;}
+  .standard-col.mandatory h5{color:var(--verified);}
+  .standard-col.flex h5{color:var(--field);}
+  .standard-col ul{margin:0; padding-left:1.1rem; font-size:0.93rem;}
+
+  .callout{
+    border-left:3px solid var(--judgment); background:var(--judgment-soft); color:var(--ink);
+    border-radius:0 8px 8px 0; padding:0.9rem 1.1rem; margin:1.2rem 0; max-width:42rem; font-size:0.94rem;
+  }
+  .callout strong{color:var(--judgment); font-family:var(--mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; display:block; margin-bottom:0.35rem;}
+
+  .myth{
+    border-left:3px solid var(--ink-soft); background:var(--code-bg); border-radius:0 8px 8px 0;
+    padding:0.9rem 1.1rem; margin:1.2rem 0; max-width:42rem; font-size:0.93rem;
+  }
+  .myth strong{display:block; font-family:var(--mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-soft); margin-bottom:0.35rem;}
+
+  .sources{display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.3rem; max-width:42rem;}
+  .sources .label{font-family:var(--mono); font-size:0.72rem; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.05em; margin-right:0.3rem; align-self:center;}
+  .src-pill{
+    font-family:var(--mono); font-size:0.76rem; text-decoration:none; color:var(--ink-soft);
+    background:var(--paper-raised); border:1px solid var(--line); padding:0.28em 0.7em; border-radius:6px;
+  }
+  .src-pill:hover{color:var(--accent); border-color:var(--accent);}
+
+  table.rollup{width:100%; border-collapse:collapse; font-size:0.92rem; max-width:56rem;}
+  table.rollup caption{caption-side:top; text-align:left; font-size:0.8rem; color:var(--ink-soft); margin-bottom:0.6rem;}
+  table.rollup th, table.rollup td{text-align:left; padding:0.65rem 0.8rem; border-bottom:1px solid var(--line); vertical-align:top;}
+  table.rollup th{font-family:var(--mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-soft);}
+  .wrap-table{overflow-x:auto;}
+
+  .tag{display:inline-block; font-family:var(--mono); font-size:0.68rem; padding:0.15em 0.5em; border-radius:5px; text-transform:uppercase; letter-spacing:0.04em;}
+  .tag.mandatory{background:var(--verified-soft); color:var(--verified);}
+  .tag.judgment{background:var(--judgment-soft); color:var(--judgment);}
+
+  footer.doc-footer{
+    max-width:42rem; padding:2.5rem 0 5rem; color:var(--ink-soft); font-size:0.85rem;
+  }
+</style>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <span class="eyebrow">SA &amp; OAC Administration — Internal Reference</span>
+    <h1>One Standard, Applied 64&nbsp;Times</h1>
+    <p class="lede">A governance and configuration reference for administering Oracle Analytics Cloud (Gen2) across a 64-application OAS&nbsp;→&nbsp;OAC migration estate — every area an admin can configure, what should be locked to a single client-wide standard, and what may legitimately vary per application.</p>
+    <dl class="meta-row">
+      <div class="meta-item"><dt>Scope</dt><dd>64 OAS applications migrating to OAC Gen2</dd></div>
+      <div class="meta-item"><dt>Prepared</dt><dd>14 July 2026</dd></div>
+      <div class="meta-item"><dt>Audience</dt><dd>OAC / OAS platform administrators</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="rail" aria-label="Document sections">
+    <div class="rail-label">Governance areas</div>
+    <ol>
+      <li><a href="#how-to-read"><span class="num">·</span> How to read this</a></li>
+      <li><a href="#area-1"><span class="num">01</span> Identity &amp; SSO</a></li>
+      <li><a href="#area-2"><span class="num">02</span> Roles &amp; hierarchy</a></li>
+      <li><a href="#area-3"><span class="num">03</span> Catalog governance</a></li>
+      <li><a href="#area-4"><span class="num">04</span> Data security</a></li>
+      <li><a href="#area-5"><span class="num">05</span> System settings</a></li>
+      <li><a href="#area-6"><span class="num">06</span> Network &amp; connectivity</a></li>
+      <li><a href="#area-7"><span class="num">07</span> Semantic model</a></li>
+      <li><a href="#area-8"><span class="num">08</span> Audit &amp; monitoring</a></li>
+      <li><a href="#area-9"><span class="num">09</span> Fleet lifecycle</a></li>
+      <li><a href="#area-10"><span class="num">10</span> Capacity &amp; licensing</a></li>
+    </ol>
+    <div class="divider"></div>
+    <ol>
+      <li><a href="#judgment-calls"><span class="num">→</span> Decisions needed</a></li>
+      <li><a href="#gaps"><span class="num">→</span> Research gaps</a></li>
+      <li><a href="#sources"><span class="num">→</span> Sources</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <section class="area" id="how-to-read">
+      <h2>How to read this document</h2>
+      <p>Each area below states what the setting is, why a 64-instance estate should care, and — the load-bearing part — a <strong>mandatory / flexible split</strong>: what must be identical across every application to satisfy the standardization mandate, versus what can reasonably differ by app size or business need without creating drift risk.</p>
+      <p>Two evidence badges appear throughout:</p>
+      <p><span class="badge verified">Oracle-verified</span> — confirmed this research pass against live docs.oracle.com / blogs.oracle.com pages, cross-checked by independent adversarial review, often corroborated by practitioner sources (Rittman Mead, Oracle Customer Connect).</p>
+      <p><span class="badge field">Field guidance</span> — established OAC/OBIEE administration practice, not re-verified against a live source this pass. Treat as a strong starting point, not a quoted Oracle standard — validate against your tenancy before writing it into a binding policy.</p>
+      <p>Violet callout boxes mark <strong>judgment calls</strong>: places where this document goes beyond what Oracle documents to recommend a specific standard. These are exactly the decisions worth taking to your governance board rather than assuming.</p>
+    </section>
+
+    <!-- AREA 1 -->
+    <section class="area" id="area-1">
+      <div class="area-head"><span class="area-num">01</span><h2>Identity &amp; Access Management / SSO</h2></div>
+      <p class="why">This is the foundation everything else inherits. Get the identity domain topology and sign-on policy wrong once at the client level, and it's wrong identically in all 64 apps.</p>
+
+      <span class="badge verified">Oracle-verified</span>
+      <p>An OCI IAM <strong>identity domain</strong> is the container for users, groups, federation/provisioning, SSO configuration, and SAML/OAuth identity-provider administration — it carries the full security policy surface, including MFA, for the population it governs.</p>
+
+      <div class="callout">
+        <strong>Load-bearing nuance</strong>
+        Every identity domain ships with an active <em>Default Sign-On Policy</em> whose <em>Default Sign-On Rule</em> allows <strong>all users to sign in with just a username and password</strong> — no MFA — by default. A separate, distinct preconfigured policy, <em>“Security Policy for OCI Console,”</em> forces MFA for members of the Administrators group (and then all users, at lower priority) — but that policy governs sign-in to the <strong>OCI Console</strong>, not general application sign-in to OAC. Assuming “the domain has MFA” because the Console policy is active is a real, easy mistake: it does not automatically extend to OAC/application access.
+      </div>
+
+      <div class="standard-box">
+        <h4>Recommended standard</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>One identity domain per environment tier (e.g. one for production, one shared for non-prod), federated once — never one domain per application</li>
+              <li>An explicit, custom Sign-On Policy that mandates MFA for OAC sign-in specifically, applied identically to every tenant — do not rely on the shipped Console-scoped MFA policy to cover this</li>
+              <li>One SSO/federation pattern (SAML2 or OIDC) with the corporate IdP, with identical attribute/claim mapping conventions reused for every app</li>
+              <li>A single password/session policy baseline (rotation, complexity, inactivity timeout) applied to the shared domain(s)</li>
+            </ul>
+          </div>
+          <div class="standard-col flex"><h5>Can vary per application</h5>
+            <ul>
+              <li>Which application-role groups exist inside the shared domain (Area 02) — the domain topology stays fixed, the group membership doesn't</li>
+              <li>Session timeout duration, where a genuine business case exists (e.g. a kiosk-mode reporting app vs. an analyst workbench) — but the mechanism and where it's set should stay consistent</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <span class="badge field">Field guidance</span>
+      <p>Session idle-timeout for OAC is a frequently-asked configuration on Oracle's Customer Connect community, which suggests it's routinely left at a default that doesn't match client security policy — worth an explicit, documented value rather than an inherited default. Migrations from the legacy on-prem OAS identity stack (OAM/OID) to OCI IAM are also a well-documented pain point in practitioner discussion, particularly around which accounts retain administrator standing post-cutover — plan an explicit admin-continuity check into every one of the 64 cutovers rather than assuming it carries over cleanly.</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        <a class="src-pill" href="https://docs.oracle.com/en-us/iaas/Content/identity-domains/identity-domains.htm">Identity domains — Oracle docs</a>
+        <a class="src-pill" href="https://docs.oracle.com/en-us/iaas/Content/Identity/signonpolicies/managingsignonpolicies.htm">Sign-on policies — Oracle docs</a>
+        <a class="src-pill" href="https://docs.oracle.com/en-us/iaas/Content/Security/Reference/iam_security_topic-iam_mfa_identity_domains_signon_policy.htm">MFA sign-on policy — Oracle docs</a>
+        <a class="src-pill" href="https://community.oracle.com/products/oracleanalytics/discussion/10852/setup-inactive-session-time-out-for-oac">Session timeout — Customer Connect</a>
+        <a class="src-pill" href="https://community.oracle.com/products/oracleanalytics/discussion/25583/upgrading-from-oam-oid-to-iam-problem-with-administrators-in-oas">OAM/OID → IAM pitfall — Customer Connect</a>
+      </div>
+    </section>
+
+    <!-- AREA 2 -->
+    <section class="area" id="area-2">
+      <div class="area-head"><span class="area-num">02</span><h2>OAC Roles &amp; Role Hierarchy</h2></div>
+      <p class="why">Roles are the single highest drift-risk area in a 64-instance estate: they're trivial to improvise slightly differently in every app, and every downstream permission decision (catalog, data, semantic model) depends on them.</p>
+
+      <span class="badge verified">Oracle-verified</span>
+      <p>OAC ships <strong>seven predefined application roles</strong> — BI Service Administrator, BI Data Model Author, BI Dataload Author, DV Content Author, BI Content Author, DV Consumer, and BI Consumer — each with a documented, specific permission scope, forming an explicit inheritance hierarchy (for example, DV Content Author indirectly carries BI Content Author, DV Consumer, and BI Consumer). Since a <strong>November 2023</strong> platform update, OAC also supports granular <em>standalone permissions</em> — create/edit connections, datasets, dataflows, workbooks; scheduling with Bursting or Run-As User; export to documents; connections to specific OCI AI services — that can be assigned individually to custom application roles, rather than only inherited wholesale via the seven predefined roles.</p>
+
+      <div class="myth">
+        <strong>Myth, refuted this pass</strong>
+        It is <em>not</em> confirmed that the predefined application roles map 1:1 to the identity domain's own default groups (ServiceAdministrator / ServiceUser / ServiceViewer), and the blanket framing “OAC is simple RBAC” did not survive adversarial review either. Don't assume a default group-to-role mapping exists out of the box — it has to be designed and documented explicitly for the client.
+      </div>
+
+      <div class="standard-box">
+        <h4>Recommended standard</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>A single, named taxonomy of custom application roles built <em>on top of</em> the seven predefined roles — never inherited-only ad hoc per app</li>
+              <li>Every custom role maps 1:1 to a named identity-domain group; group-based assignment only, no direct-to-user role grants, anywhere</li>
+              <li>The November-2023 standalone-permission mechanism is the designated tool for one-off exceptions (e.g. a specific dataflow-scheduling need) — not a reason to create a new bespoke role per app</li>
+              <li>A single register (spreadsheet, wiki, or better — code) of every role, its OAC permission scope, and its mapped identity-domain group, kept in one place for all 64 apps, not 64 separate lists</li>
+            </ul>
+          </div>
+          <div class="standard-col flex"><h5>Can vary per application</h5>
+            <ul>
+              <li><em>Which</em> of the standard custom roles are actually populated with users in a given app — a small reporting app may only ever use two of the five defined roles</li>
+              <li>Standalone-permission grants for genuinely app-specific exceptions, provided they're logged against the central register</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Judgment call</strong>
+        Oracle's documentation describes the mechanics of predefined roles and standalone permissions; it does not itself prescribe “define one fixed custom-role taxonomy across all your instances.” That recommendation is this document's synthesis, made because 64 independently-invented role sets is the single most likely source of the exact drift the client wants to avoid. Confirm this approach with the governance board before treating it as policy.
+      </div>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/predefined-application-roles.html">Predefined application roles — Oracle docs</a>
+        <a class="src-pill" href="https://blogs.oracle.com/analytics/post/managing-permissions-in-oracle-analytics-cloud">Managing permissions — Oracle Analytics blog</a>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/permissions.html">Permissions reference — Oracle docs</a>
+        <a class="src-pill" href="https://blogs.oracle.com/analytics/oracle-analytics-best-practices-understand-application-roles-in-oracle-analytics">Understanding application roles — Oracle Analytics blog</a>
+        <a class="src-pill" href="https://community.oracle.com/products/oracleanalytics/discussion/19895/need-a-lower-role-than-bi-service-administrator-which-can-be-assigned-to-users-to-monitor-the-jobs">“Need a lower role than Service Admin” — Customer Connect</a>
+      </div>
+    </section>
+
+    <!-- AREA 3 -->
+    <section class="area" id="area-3">
+      <div class="area-head"><span class="area-num">03</span><h2>Catalog &amp; Content Permissions</h2></div>
+      <p class="why">The presentation catalog is where roles become lived experience — folder structure and permission grants are what a content author actually bumps into every day.</p>
+
+      <span class="badge verified">Oracle-verified</span>
+      <p>Catalog permissions are assigned to application roles or individual users, and inheritance runs through role membership: a user inherits every permission of every role they belong to. Separately, OAC provides a <strong>“Custom”</strong> permission option that lets an admin grant a specific user authority to bypass a folder's own permission settings for a single item, without altering the folder's inherited permissions for anyone else — a targeted, auditable exception mechanism distinct from ordinary inheritance.</p>
+
+      <div class="standard-box">
+        <h4>Recommended standard</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>Group/role-based catalog grants only — the item-level “Custom” bypass is reserved for documented, sign-off-required exceptions, never a routine substitute for correct role design</li>
+              <li>A single top-level folder taxonomy convention (e.g. <code>/Shared/&lt;Domain&gt;/&lt;App&gt;/Dashboards|Reports|DataSets</code>) applied identically across all 64 apps, so any admin can navigate any app's catalog without relearning structure</li>
+              <li>Personal folders remain personal — never a substitute for shared, governed content, and never used to hide production reporting logic from the standard review process</li>
+            </ul>
+          </div>
+          <div class="standard-col flex"><h5>Can vary per application</h5>
+            <ul>
+              <li>Depth of sub-folder structure below the standard top two levels, driven by an app's actual content volume</li>
+              <li>Which specific custom roles are granted at which folder level (Area 02 governs the roles; this area governs where they're applied)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="myth">
+        <strong>Myth, refuted this pass</strong>
+        Don't assume Oracle positions <em>snapshot download/upload</em> as “the” primary mechanism for dev → test → prod content promotion. That specific framing was checked and did not hold up — Oracle offers snapshots, Content Publisher, and Migration Manager as distinct tools, and which one is the right promotion mechanism for a 64-instance pipeline is an open question (see <a href="#gaps">Research gaps</a>), not a settled default.
+      </div>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/assign-access-permissions.html">Assign access permissions — Oracle docs</a>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acmdg/permission-inheritance-application-roles.html">Permission inheritance — Oracle docs</a>
+      </div>
+    </section>
+
+    <!-- AREA 4 -->
+    <section class="area" id="area-4">
+      <div class="area-head"><span class="area-num">04</span><h2>Data Security</h2></div>
+      <p class="why">Row-level and object-level security is the layer most likely to be quietly re-invented per application by whichever consultant built that particular semantic model — and the hardest drift to detect after the fact, because it fails silently as “correct-looking but wrong” numbers.</p>
+
+      <span class="badge field">Field guidance — not independently re-verified this pass</span>
+      <p>Every claim in this area comes from established OAC/OBIEE semantic-modeling practice rather than a source this research pass could confirm live. Validate specifics against current documentation before writing any of it into binding policy.</p>
+
+      <h3 class="sub">Row-level security / data filters</h3>
+      <p>OAC's Semantic Modeler supports data filters defined against application roles (or, less desirably, individual users), typically driven by session variables populated at login from group membership or a mapping table — functionally the same pattern as RPD-based row-level security in OBIEE/OAS. The filter expression itself lives in the semantic model, not the catalog.</p>
+
+      <h3 class="sub">Object-level security</h3>
+      <p>Presentation-layer objects (subject areas, tables, columns) can be hidden or exposed per application role at the semantic-model level, independent of catalog folder permissions — the two layers are frequently confused, and a common defect pattern is “fixing” a data-exposure problem in the catalog when the real leak is an object left visible in the semantic model.</p>
+
+      <h3 class="sub">Connection pool credentials</h3>
+      <p>Connection pools can run under a single shared service account or pass through per-user database credentials. Shared-account pooling is simpler to operate and scales connection counts far better, but pushes all row-level enforcement into the semantic-model filter layer (since the database sees one identity); per-user credentials let the database itself enforce row security, at real cost to connection efficiency and administrative overhead of provisioning DB accounts per user.</p>
+
+      <div class="standard-box">
+        <h4>Recommended standard</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>One connection-pool credential strategy (shared service account <em>or</em> per-user passthrough) decided once at the client level — mixing the two models across 64 apps makes the eventual security review unmanageable</li>
+              <li>Data filters attached to application roles only, never to named individual users</li>
+              <li>A single naming/documentation convention for filter session variables and initialization blocks, so any semantic-model reviewer can audit any app's row-level security the same way</li>
+            </ul>
+          </div>
+          <div class="standard-col flex"><h5>Can vary per application</h5>
+            <ul>
+              <li>The actual filter predicate logic and which dimension(s) it restricts — this is inherently business-specific</li>
+              <li>Whether object-level security is needed at all for a given app's subject areas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Judgment call — validate before mandating</strong>
+        This entire area was a confirmed gap in the underlying research: no live Oracle source or forum thread on row-level security patterns, connection-pool strategy, or Essbase security specifics survived adversarial verification this pass. Treat everything above as a reasonable starting framework grounded in general OAC/OBIEE practice, not a quoted Oracle standard — a follow-up research pass specifically on data security (see <a href="#gaps">Research gaps</a>) should confirm or correct it before it goes into a binding client policy.
+      </div>
+    </section>
+
+    <!-- AREA 5 -->
+    <section class="area" id="area-5">
+      <div class="area-head"><span class="area-num">05</span><h2>System / Instance Settings</h2></div>
+      <p class="why">The day-one console settings each of the 64 instances ships with its own copy of — the easiest area to let drift silently because nobody re-checks a setting that was only ever touched once, at provisioning.</p>
+
+      <span class="badge verified">Oracle-verified</span>
+      <p>Access to manage system settings — via the Console or REST API — is gated behind the BI Service Administrator role or a custom role carrying the explicit “Manage System Settings” permission. OAC exposes REST APIs to programmatically view and manage system settings (including usage-tracking options), which means every setting in this section is automatable rather than a manual, per-instance click-through.</p>
+
+      <div class="standard-box">
+        <h4>Recommended standard</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>One versioned script (using the System Settings REST API) that provisions every day-one setting identically across all 64 instances, run at provisioning and re-run to correct drift — never manual Console configuration as the source of truth</li>
+              <li>A single custom application role, used only by the automation service account, holding “Manage System Settings” — not ad hoc BI Service Administrator grants to individual admins for this purpose</li>
+              <li>Locale, timezone, currency, and date/number-format defaults fixed to one client standard (even where end users are geographically distributed — set the instance default centrally, let user-level locale preference handle the individual view)</li>
+              <li>Custom branding/theme elements (logo, color scheme, favicon) standardized to the client's visual identity, applied via the same automation rather than per-app manual upload</li>
+            </ul>
+          </div>
+          <div class="standard-col flex"><h5>Can vary per application</h5>
+            <ul>
+              <li>Map/spatial layer configuration, where only a subset of apps do geospatial analysis</li>
+              <li>DV console defaults that are genuinely tied to a specific app's usage pattern (e.g. default landing page)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <span class="badge verified">Oracle-verified</span>
+      <p>Backup and snapshot policy belongs in this area operationally (see Area 09 for the full mechanics): Oracle's own recommendation is to snapshot both at significant checkpoints <em>and</em> on a regular cadence, with a hard platform ceiling of 40 snapshots retained online per instance and unlimited additional snapshots exportable to offline storage.</p>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/manage-snaphots-using-rest-apis.html">System settings &amp; snapshot REST APIs — Oracle docs</a>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/schedule-regular-snapshots-backups.html">Snapshot scheduling — Oracle docs</a>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/configuring-oracle-analytics-cloud.pdf">Configuring OAC — Oracle admin guide</a>
+      </div>
+    </section>
+
+    <!-- AREA 6 -->
+    <section class="area" id="area-6">
+      <div class="area-head"><span class="area-num">06</span><h2>Network &amp; Connectivity</h2></div>
+      <p class="why">Every one of the 64 apps eventually needs to reach an on-prem or OCI-resident data source — how that path is built is either standardized once or reinvented, and mis-invented, 64 times.</p>
+
+      <span class="badge field">Field guidance — not independently re-verified this pass</span>
+      <p>OAC connects to on-premises or non-public data sources primarily via a <strong>Private Access Channel</strong> (a managed, OCI-side network path avoiding public internet exposure) or a <strong>Remote Data Gateway</strong> agent installed near the data source. Both require explicit allow-listing of source IPs/ports and, where the source sits in a customer VCN, peering or a dynamic routing gateway configuration.</p>
+
+      <div class="standard-box">
+        <h4>Recommended standard</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>One connectivity pattern of record (Private Access Channel <em>or</em> Remote Data Gateway) per data-source category — e.g. “all on-prem Oracle DB sources use Gateway pattern X,” documented once, referenced by every app rather than re-decided per project</li>
+              <li>A single, centrally-managed allow-list / firewall-rule change process, rather than 64 independent requests to the network team with 64 different naming conventions</li>
+              <li>One VCN peering / routing topology reused across instances in the same region, not a bespoke network diagram per application</li>
+            </ul>
+          </div>
+          <div class="standard-col flex"><h5>Can vary per application</h5>
+            <ul>
+              <li>Which specific data sources an app actually connects to</li>
+              <li>Gateway sizing/placement where genuine latency or data-residency constraints differ by app</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Judgment call — validate before mandating</strong>
+        No live Oracle source or forum discussion on Private Access Channel setup, allow-listing patterns, or Remote Data Gateway standardization survived verification this pass, despite being explicitly in scope. This section is general OAC networking knowledge, not confirmed Oracle guidance — commission a dedicated deep-dive (see <a href="#gaps">Research gaps</a>) before this becomes binding network policy, since a wrong assumption here has real security-perimeter consequences.
+      </div>
+    </section>
+
+    <!-- AREA 7 -->
+    <section class="area" id="area-7">
+      <div class="area-head"><span class="area-num">07</span><h2>Semantic Model Governance</h2></div>
+      <p class="why">The RPD-equivalent layer is where OAC gives you a genuine, Oracle-native answer to “how do we version and audit 64 sets of business logic” — arguably the strongest lever available for this program.</p>
+
+      <span class="badge verified">Oracle-verified</span>
+      <p>OAC's Semantic Modeler stores each semantic model as a set of JSON files (Semantic Modeler Markup Language, SMML) that integrate natively with a Git repository — GitHub, GitLab, or Git on Oracle Visual Builder — for version control and multi-developer synchronization. Two connection methods are supported: HTTPS (via a GitHub personal access token) or SSH (via a key generated in OAC and registered with GitHub), with reusable named Git connection/user profiles for credentials, and each semantic model can point at a separate repository.</p>
+
+      <div class="standard-box">
+        <h4>Recommended standard</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>Git-backed semantic modeling required for every one of the 64 applications, without exception — Oracle provides no other native versioning or audit trail for RPD-equivalent changes</li>
+              <li>A single Git provider and a single authentication method (HTTPS token or SSH key), not a mix, so credential rotation and access review is one process, not 64</li>
+              <li>One repo-per-model convention and one branching/PR-review workflow (e.g. feature branch → PR → review → merge to main → publish) applied identically everywhere</li>
+            </ul>
+          </div>
+          <div class="standard-col flex"><h5>Can vary per application</h5>
+            <ul>
+              <li>Model complexity, subject-area count, and modeling patterns themselves — the versioning discipline is standardized, the business content isn't</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Judgment call</strong>
+        Oracle documents the Git integration mechanics; it does not itself mandate HTTPS-vs-SSH or a specific branching strategy. Standardizing those choices is this document's recommendation, made because semantic-layer drift across 64 apps is otherwise invisible until a data discrepancy surfaces in production.
+      </div>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        <a class="src-pill" href="https://blogs.oracle.com/analytics/oac-semantic-modeller-github">Semantic Modeler ↔ GitHub integration — Oracle Analytics blog</a>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acsmm/semantic-modeler-markup-language.html">SMML reference — Oracle docs</a>
+        <a class="src-pill" href="https://www.rittmanmead.com/blog/2022/09/oac-semantic-modeler-and-version-control-with-git/">Semantic Modeler &amp; Git — Rittman Mead</a>
+        <a class="src-pill" href="https://www.rittmanmead.com/blog/2022/09/oac-semantic-modeller-and-the-smml-language/">The SMML language — Rittman Mead</a>
+        <a class="src-pill" href="https://www.ateam-oracle.com/oracle-analytics-cloud-oac-developer-controlled-bi-cache-settings">Developer-controlled BI cache settings — Oracle A-Team</a>
+      </div>
+    </section>
+
+    <!-- AREA 8 -->
+    <section class="area" id="area-8">
+      <div class="area-head"><span class="area-num">08</span><h2>Auditing, Monitoring &amp; Usage Tracking</h2></div>
+      <p class="why">Without a standardized audit and usage-tracking baseline, a fleet of 64 instances has no consistent way to answer “who changed what, and is anyone actually using this app” — both are exactly the questions a standardization program gets asked to answer.</p>
+
+      <span class="badge field">Field guidance — not independently re-verified this pass</span>
+      <p>OAC's Usage Tracking feature, once enabled via System Settings, logs query-level activity (user, dashboard/analysis, run time, row counts) to a dedicated usage-tracking database schema, which can itself be modeled and reported on as an administrative subject area. Administrative actions (role changes, snapshot activity, system-setting changes) are separately traceable through Console/audit views and the REST API surface confirmed in Area 05. Integrating either stream with OCI Logging/Monitoring for centralized alerting is an OCI-platform integration pattern rather than an OAC-specific feature.</p>
+
+      <div class="standard-box">
+        <h4>Recommended standard</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>Usage Tracking enabled on every one of the 64 instances, by default, at provisioning — not an opt-in left to individual app teams</li>
+              <li>A single usage-tracking schema/reporting model reused across apps, so fleet-wide adoption and utilization reporting is one dashboard, not 64</li>
+              <li>One alerting integration pattern for administrative actions (role/permission changes, system-setting changes) into whatever the client's central SIEM/monitoring stack is, applied uniformly</li>
+            </ul>
+          </div>
+          <div class="standard-col flex"><h5>Can vary per application</h5>
+            <ul>
+              <li>Retention period for usage data, where a specific app has a distinct compliance requirement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Judgment call — validate before mandating</strong>
+        No live source on OAC audit-log integration with OCI Logging/Monitoring, or on alerting specifics for administrative actions, survived verification this pass despite being explicitly requested. This section reflects general practice; confirm actual usage-tracking schema details and OCI integration steps against current documentation before automating against them.
+      </div>
+    </section>
+
+    <!-- AREA 9 -->
+    <section class="area" id="area-9">
+      <div class="area-head"><span class="area-num">09</span><h2>Fleet Lifecycle Management</h2></div>
+      <p class="why">This is the area that only exists because there are 64 of these, not one — patching, naming, and drift detection are non-questions at single-instance scale and existential ones at fleet scale.</p>
+
+      <span class="badge verified">Oracle-verified</span>
+      <p>Backup/promotion is REST-API-automatable end to end: OAC exposes REST APIs to create, restore, register, delete, and monitor snapshots (BAR files) in OCI Object Storage, with granular, selective migration (everything, or specific content types only), a hard cap of 40 online snapshots per instance, and unlimited offline export to local filesystem or an Oracle Cloud storage bucket. This is the concrete building block a fleet-wide configuration-as-code and drift-detection program should be built on.</p>
+
+      <div class="standard-box">
+        <h4>Recommended standard — automation baseline (Oracle-verified building blocks)</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>One centrally-scripted snapshot cadence (checkpoint + regular schedule) run identically across all 64 tenants via REST API — never manual per-instance Console snapshotting</li>
+              <li>A uniform offline-export/retention policy, planned around the 40-online-snapshot ceiling being reached quickly across an active 64-instance estate</li>
+              <li>A single service-account custom role (Area 02) used to run all fleet automation, rather than per-instance ad hoc admin grants</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <span class="badge field">Field guidance — not independently re-verified this pass</span>
+      <p>Beyond the confirmed snapshot/REST mechanics, a fleet of this size typically also needs: a fixed patch/update-window cadence per environment tier (Oracle applies OAC platform updates on a rolling schedule the client doesn't fully control, but the client's own maintenance-window scheduling and change-communication process around it should be identical for all 64 apps); a single instance-naming and OCI-tagging convention (environment, business domain, cost center) so the estate is queryable as one fleet rather than 64 one-offs; and a scripted drift-detection routine — periodically pulling each instance's system settings, role/permission definitions, and semantic-model Git state via REST API and diffing against the client-standard baseline defined in this document, flagging any instance that has silently diverged.</p>
+
+      <div class="callout">
+        <strong>Judgment call — validate before mandating</strong>
+        Patch cadence, naming/tagging conventions, and drift-detection tooling specifics returned no surviving verified claim this pass. The REST-API-diff approach above is a reasonable design given the confirmed API surface in Areas 05 and 09, but it is this document's proposed architecture, not an Oracle-published pattern — worth a dedicated proof-of-concept against 2–3 pilot instances before rolling out fleet-wide.
+      </div>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/migrate-oracle-analytics-cloud-using-snapshots.html">Migrating OAC using snapshots — Oracle docs</a>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/manage-snaphots-using-rest-apis.html">Snapshot REST APIs — Oracle docs</a>
+        <a class="src-pill" href="https://blogs.oracle.com/analytics/oac-migration-automation">Automating snapshot &amp; data-file migration — Oracle Analytics blog</a>
+      </div>
+    </section>
+
+    <!-- AREA 10 -->
+    <section class="area" id="area-10">
+      <div class="area-head"><span class="area-num">10</span><h2>Capacity &amp; Licensing Governance</h2></div>
+      <p class="why">At 64 instances, capacity decisions compound: a sizing mistake repeated 64 times is a budget-line problem, not a rounding error.</p>
+
+      <span class="badge verified">Oracle-verified</span>
+      <p>OAC editions carry different default OCPU service limits: <strong>Professional Edition</strong> defaults to a maximum of 4 OCPUs; <strong>Enterprise Edition</strong> defaults to 40 OCPUs under Universal Credits, but only 4 under Pay-As-You-Go or trial billing. <strong>OCI Compartment Quotas</strong> are the official mechanism for capping how many OCPUs or user seats different teams/compartments can self-provision (documented example syntax: <code>set analytics quota ee-ocpu-count to 10 in compartment MyEnterpriseCompartment</code>). Under Universal Credits, capacity can be flexibly scaled only within a <strong>1–16 OCPU</strong> range; fixed tiers of 24/36/52 OCPUs exist above that but are <em>not</em> flexibly scalable — moving between fixed tiers, or across a defined named-user band, requires standing up a new service instance and migrating content, not an in-place resize.</p>
+
+      <div class="standard-box">
+        <h4>Recommended standard</h4>
+        <div class="standard-grid">
+          <div class="standard-col mandatory"><h5>Mandatory, client-wide</h5>
+            <ul>
+              <li>One compartment-quota policy, set once via IAM policy statement, governing every app's self-provisioning ceiling — not per-app negotiation with Oracle support</li>
+              <li>A single, documented size-class decision tree (e.g. small / medium / large app → fixed OCPU tier or flexible 1–16 range) decided at initial provisioning for all 64 apps, so nobody discovers the fixed-tier migration cliff after the fact</li>
+              <li>A single edition choice (Professional vs. Enterprise) per use-case category, not decided ad hoc per project</li>
+            </ul>
+          </div>
+          <div class="standard-col flex"><h5>Can vary per application</h5>
+            <ul>
+              <li>The actual OCPU count or user-band assigned within the agreed size classes, driven by real usage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Judgment call</strong>
+        Because both OCPU-tier changes above 16 and user-count-band changes require a full new-instance-plus-content-migration event, get the size-class decision tree agreed <em>before</em> provisioning the remaining apps in the 64 — retrofitting it later means repeating exactly the migration effort this program exists to avoid.
+      </div>
+
+      <div class="sources">
+        <span class="label">Sources</span>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acoci/administering-oracle-analytics-cloud-oracle-cloud-infrastructure-gen-2.pdf">Administering OAC (Gen2) — Oracle admin guide</a>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acoci/service-quotas.html">Service quotas — Oracle docs</a>
+        <a class="src-pill" href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acoci/scaling.html">Scaling — Oracle docs</a>
+        <a class="src-pill" href="https://www.rittmanmead.com/blog/2019/08/oac-row-limits-scale-up-or-down/">Scaling up or down — Rittman Mead</a>
+      </div>
+    </section>
+
+    <!-- JUDGMENT CALLS ROLLUP -->
+    <section class="area" id="judgment-calls">
+      <h2>Decisions to take to the governance board</h2>
+      <p class="why">Every judgment call from the sections above, in one place — these are recommendations grounded in confirmed platform mechanics, not Oracle-prescribed defaults, and each is a real decision the client should make explicitly rather than inherit.</p>
+      <div class="wrap-table">
+        <table class="rollup">
+          <caption>Consolidated from all ten governance areas</caption>
+          <thead><tr><th>Area</th><th>Decision needed</th><th>Why it can't just default</th></tr></thead>
+          <tbody>
+            <tr><td>01 · Identity</td><td>Author an explicit MFA-for-OAC sign-on policy</td><td>Shipped Console MFA policy does not cover application sign-in</td></tr>
+            <tr><td>02 · Roles</td><td>Adopt one fixed custom-role taxonomy fleet-wide</td><td>No default group-to-role mapping exists; 64 apps will invent 64 taxonomies otherwise</td></tr>
+            <tr><td>03 · Catalog</td><td>Pick the dev→test→prod promotion tool (snapshots vs. Content Publisher vs. Migration Manager)</td><td>Snapshots are not confirmed as Oracle's primary promotion mechanism — needs its own research</td></tr>
+            <tr><td>04 · Data security</td><td>Pick one connection-pool credential model (shared vs. per-user) fleet-wide</td><td>Mixing models across 64 apps makes a future security review unmanageable</td></tr>
+            <tr><td>06 · Network</td><td>Fix one connectivity pattern (Private Access Channel vs. Remote Data Gateway) per source category</td><td>Unverified this pass; wrong assumption has real perimeter-security consequences</td></tr>
+            <tr><td>07 · Semantic model</td><td>Standardize Git auth method and branching workflow</td><td>Oracle supports both HTTPS and SSH; not mandating one invites drift in the strongest governance lever available</td></tr>
+            <tr><td>09 · Fleet lifecycle</td><td>Approve the REST-API drift-detection design before fleet rollout</td><td>Proposed architecture, not an Oracle-published pattern — pilot first</td></tr>
+            <tr><td>10 · Capacity</td><td>Agree the app size-class → OCPU-tier decision tree before provisioning the rest of the 64</td><td>Fixed-tier and user-band changes require a full migration event, not a resize</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- GAPS -->
+    <section class="area" id="gaps">
+      <h2>Research gaps — recommended follow-up</h2>
+      <p class="why">These returned no independently-verified claim in this research pass despite being explicitly in scope. The <span class="badge field" style="margin:0;">field guidance</span> sections above are a reasonable working start, not a substitute for confirming them directly.</p>
+      <ul>
+        <li>Oracle's (and practitioner) actual recommended pattern for row-level security / data-filter implementation, and for connection-pool credential strategy (shared service account vs. per-user)</li>
+        <li>Documented patterns for OAC network connectivity at multi-tenant scale — Private Access Channel setup, on-prem allow-listing, Remote Data Gateway standardization — and how to avoid per-instance network drift</li>
+        <li>Oracle's actual official position on the preferred content-promotion tool for dev/test/prod lifecycles — snapshots vs. Content Publisher vs. Migration Manager vs. the Baseline Validation Tool</li>
+        <li>Oracle-published or practitioner guidance specifically on configuration-drift <em>detection</em> across 50+ OAC instances, beyond the individual REST API building blocks confirmed here</li>
+      </ul>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="area" id="sources" style="border-bottom:none;">
+      <h2>Primary sources</h2>
+      <p class="why">Every Oracle-verified claim in this document traces to a live-fetched page as of 14 July 2026, cross-checked by independent adversarial review. OAC's permissions model changed materially as recently as November 2023 — re-validate this document against Oracle's release notes periodically rather than treating it as permanently current.</p>
+      <ul>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/predefined-application-roles.html">Predefined Application Roles</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://blogs.oracle.com/analytics/post/managing-permissions-in-oracle-analytics-cloud">Managing Permissions in Oracle Analytics Cloud</a> — Oracle Analytics blog</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/permissions.html">Permissions reference</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://blogs.oracle.com/analytics/oracle-analytics-best-practices-understand-application-roles-in-oracle-analytics">Understanding Application Roles in Oracle Analytics</a> — Oracle Analytics blog</li>
+        <li><a href="https://docs.oracle.com/en-us/iaas/Content/identity-domains/identity-domains.htm">Identity Domains</a> — OCI IAM documentation</li>
+        <li><a href="https://docs.oracle.com/en-us/iaas/Content/Identity/signonpolicies/managingsignonpolicies.htm">Managing Sign-On Policies</a> — OCI IAM documentation</li>
+        <li><a href="https://docs.oracle.com/en-us/iaas/Content/Security/Reference/iam_security_topic-iam_mfa_identity_domains_signon_policy.htm">MFA and Sign-On Policy</a> — OCI security reference</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/assign-access-permissions.html">Assign Access Permissions</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acmdg/permission-inheritance-application-roles.html">Permission Inheritance for Application Roles</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/migrate-oracle-analytics-cloud-using-snapshots.html">Migrating Oracle Analytics Cloud Using Snapshots</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/schedule-regular-snapshots-backups.html">Scheduling Regular Snapshots</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/manage-snaphots-using-rest-apis.html">Managing Snapshots Using REST APIs</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/configuring-oracle-analytics-cloud.pdf">Configuring Oracle Analytics Cloud</a> — Oracle admin guide (PDF)</li>
+        <li><a href="https://blogs.oracle.com/analytics/oac-migration-automation">Automate Snapshot and Data File Migration Using OAC REST APIs</a> — Oracle Analytics blog</li>
+        <li><a href="https://blogs.oracle.com/analytics/oac-semantic-modeller-github">Integration of OAC Semantic Modeller with GitHub</a> — Oracle Analytics blog</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acsmm/semantic-modeler-markup-language.html">Semantic Modeler Markup Language (SMML)</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://www.rittmanmead.com/blog/2022/09/oac-semantic-modeler-and-version-control-with-git/">OAC Semantic Modeler and Version Control with Git</a> — Rittman Mead</li>
+        <li><a href="https://www.rittmanmead.com/blog/2022/09/oac-semantic-modeller-and-the-smml-language/">OAC Semantic Modeller and the SMML Language</a> — Rittman Mead</li>
+        <li><a href="https://www.ateam-oracle.com/oracle-analytics-cloud-oac-developer-controlled-bi-cache-settings">OAC Developer-Controlled BI Cache Settings</a> — Oracle A-Team Chronicles</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acoci/administering-oracle-analytics-cloud-oracle-cloud-infrastructure-gen-2.pdf">Administering Oracle Analytics Cloud on OCI (Gen 2)</a> — Oracle admin guide (PDF)</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acoci/service-quotas.html">Service Quotas</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://docs.oracle.com/en/cloud/paas/analytics-cloud/acoci/scaling.html">Scaling</a> — Oracle Analytics Cloud documentation</li>
+        <li><a href="https://www.rittmanmead.com/blog/2019/08/oac-row-limits-scale-up-or-down/">OAC: Scale Up or Down</a> — Rittman Mead</li>
+        <li><a href="https://community.oracle.com/products/oracleanalytics/discussion/19895/need-a-lower-role-than-bi-service-administrator-which-can-be-assigned-to-users-to-monitor-the-jobs">“Need a lower role than BI Service Administrator...”</a> — Oracle Cloud Customer Connect</li>
+        <li><a href="https://community.oracle.com/products/oracleanalytics/discussion/25583/upgrading-from-oam-oid-to-iam-problem-with-administrators-in-oas">“Upgrading from OAM/OID to IAM — problem with Administrators in OAS”</a> — Oracle Cloud Customer Connect</li>
+        <li><a href="https://community.oracle.com/products/oracleanalytics/discussion/10852/setup-inactive-session-time-out-for-oac">“Setup inactive session time-out for OAC”</a> — Oracle Cloud Customer Connect</li>
+      </ul>
+
+      <footer class="doc-footer">
+        Prepared for internal SA / OAC administration use from a 108-agent multi-source research pass (25 primary sources fetched, 95 candidate claims extracted, 25 adversarially verified — 21 confirmed, 4 refuted) plus documented field guidance for areas the pass could not independently confirm. Re-validate the Oracle-verified sections periodically against current documentation; treat field-guidance and judgment-call sections as a starting proposal for governance sign-off, not settled policy.
+      </footer>
+    </section>
+  </main>
+</div>
+
+</body></html>
